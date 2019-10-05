@@ -1,0 +1,25 @@
+.popular-services {
+  margin-bottom: $mb50;
+
+  &__item {
+    border: 1px solid $br-color;
+    padding: 25px 40px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+    &--1:before {
+      content: url("../../images/icons/city.png");
+      margin-right: 30px;
+    }
+  }
+
+  &__descr {
+    font-size: $fz-md;
+  }
+
+  &__price {
+    font-size: $fz-sm;
+  }
+}
