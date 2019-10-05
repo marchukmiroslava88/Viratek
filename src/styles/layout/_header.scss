@@ -1,0 +1,47 @@
+.header {
+  background-color: #e5f5fd;
+
+  &-nav {
+    margin-left: 25%;
+
+    &__item {
+      padding: 0 35px;
+
+      &:first-child {
+        padding-left: 8px;
+      }
+    }
+
+    &__link {
+      color: $primary-color;
+      font-size: $fz-sm;
+      font-weight: bold;
+      display: inline-block;
+      padding: 15px 0;
+      position: relative;
+
+      &:after {
+        content: "";
+        background: $info-color;
+        height: 2px;
+        width: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        bottom: 0;
+        border-radius: 8px;
+        transition: width 0.3s;
+      }
+
+      &:hover {
+        color: $info-color;
+        text-decoration: none;
+
+        &:after {
+          width: 100%;
+        }
+      }
+
+    }
+  }
+}

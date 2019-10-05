@@ -4,10 +4,12 @@
 
 $palette-primary: (
   blue : #0099e8,
+  light-blue : #00acdc,
   gray-lighten: #676767,
 );
-$primary-color: map-get($palette-primary, gray-darken);
+$primary-color: map-get($palette-primary, blue);
 $secondary-color: map-get($palette-primary, gray-lighten);
+$info-color: map-get($palette-primary, light-blue);
 
 $palette-secondary: (
   light : #fff,
