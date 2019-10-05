@@ -1,1 +1,41 @@
+/*
+ ## Colors
+*/
+
+$palette-primary: (
+  blue : #0099e8,
+  gray-lighten: #676767,
+);
+$primary-color: map-get($palette-primary, gray-darken);
+$secondary-color: map-get($palette-primary, gray-lighten);
+
+$palette-secondary: (
+  light : #fff,
+  green: #3eb105,
+  yellow: #ffa200,
+  red: #ff3000
+);
+$success-color: map-get($palette-secondary, green);
+$warning-color: map-get($palette-secondary, yellow);
+$danger-color: map-get($palette-secondary, red);
+
+/*
+ ## Font, line-height, font-size
+*/
+
+$fz-xl: 36px;
+$fz-lg: 30px;
+$fz-md: 18px;
+$fz-sm: 15px;
+$fz-xs: 12px;
+
+$lh-lg: 48px;
+$lh-md: 24px;
+
+/*
+ ## Spacing
+*/
+
+$mb80: 80px;
+$mb50: 50px;
 
