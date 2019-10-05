@@ -1,0 +1,16 @@
+.contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+  border-bottom: 1px solid $br-color;
+
+  &__text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .btn {
+    width: 200px;
+  }
+}

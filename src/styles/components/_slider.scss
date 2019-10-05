@@ -1,0 +1,39 @@
+.main-slider {
+  margin-top: 35px;
+
+  .slick-dots {
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    display: flex;
+
+    .slick-active button {
+
+      &:after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        display: inline-block;
+        border-radius: 100%;
+        right: 4px;
+        top: 4px;
+        background: $primary-color;
+      }
+    }
+
+    li {
+      margin-right: 8px;
+
+      button {
+        border-radius: 100%;
+        background: #fff;
+        border: 1px solid #e6e6e6;
+        width: 25px;
+        height: 25px;
+        font-size: 0;
+        position: relative;
+      }
+    }
+  }
+}
