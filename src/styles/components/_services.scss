@@ -9,9 +9,12 @@
     display: flex;
     align-items: center;
 
+    &:before {
+      margin-right: 30px;
+    }
+
     &--1:before {
       content: url("../../images/icons/city.png");
-      margin-right: 30px;
     }
   }
 
