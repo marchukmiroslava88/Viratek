@@ -33,46 +33,43 @@
       <aside class="col-3">
         <div class="sidebar">
           <h1 class="sidebar__logo">
-            <img src="#" alt="logo">
+            <img src="./images/logo.png" alt="logo">
+            <div class="logo-text">Группа компаний по ремонту и инженерных решений для дома и офиса!</div>
           </h1>
           <nav>
-            <ul class="sidebar__nav">
-              <li class="sidebar__item">
-                <a class="sidebar__link" href="#">Ремонт под ключ</a>
+            <ul class="sidebar-nav">
+              <li class="sidebar-nav__item">
+                <a class="sidebar-nav__link" href="#">Ремонт под ключ</a>
               </li>
-              <li class="sidebar__item">
-                <a class="sidebar__link" href="#">Отделочные работы</a>
-                <ul>
+              <li class="sidebar-nav__item">
+                <a class="sidebar-nav__link active" href="#">Отделочные работы</a>
+                <ul class="sub-nav">
                   <span class="font-weight-bold">Ремонт пола</span>
-                  <li><a href="#" class="">Укладка ламината</a></li>
-                  <li><a href="#" class="">Укладка ламината</a></li>
-                  <li><a href="#" class="">Укладка ламината</a></li>
-                  <li><a href="#" class="">Укладка ламината</a></li>
-                  <li><a href="#" class="">Укладка ламината</a></li>
+                  <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
+                  <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
+                  <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
+                  <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
+                  <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
                 </ul>
-              </li>
-              <li class="sidebar__item">
-                <a class="sidebar__link" href="#"></a>
-                <ul>
-                  <span class="font-weight-bold">Lorem ipsum dolor</span>
-                  <li><a href="#" class="">Lorem ipsum.</a></li>
-                  <li><a href="#" class="">Lorem ipsum.</a></li>
-                  <li><a href="#" class="">Lorem ipsum.</a></li>
-                  <li><a href="#" class="">Lorem ipsum.</a></li>
-                  <li><a href="#" class="">Lorem ipsum.</a></li>
+                <ul class="sub-nav">
+                  <span class="font-weight-bold">Ремонт стен</span>
+                  <li class="sub-nav__item"><a href="#" class="sub-nav__link">Штукатурка стен</a></li>
+                  <li class="sub-nav__item"><a href="#" class="sub-nav__link">Поклейка обоев</a></li>
                 </ul>
               </li>
             </ul>
           </nav>
           <div class="call-back">
             <div class="call-back__photo">
-              <img src="" alt="photo">
+              <img src="./images/manager.png" alt="manager photo">
             </div>
             <div class="call-back__text">
               <div class="text-muted">Мастер консультант</div>
-              <div>Артур Бубалех</div>
+              <div class="call-back__manager">Артур Бубалех</div>
             </div>
-            <div><a href="tel:">+7(343)206-44-88</a></div>
+            <div class="call-back__contact">
+              <a href="tel:">+7(343)206-44-88</a>
+            </div>
             <button class="btn btn-primary">Заказать звонок</button>
           </div>
         </div>

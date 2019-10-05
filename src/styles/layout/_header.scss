@@ -6,6 +6,7 @@
 
     &__item {
       padding: 0 35px;
+      white-space: nowrap;
 
       &:first-child {
         padding-left: 8px;
@@ -17,7 +18,7 @@
       font-size: $fz-sm;
       font-weight: bold;
       display: inline-block;
-      padding: 15px 0;
+      padding: 14px 0;
       position: relative;
 
       &:after {

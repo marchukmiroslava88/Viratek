@@ -1,0 +1,59 @@
+.sidebar {
+  transform: translateY(-50px);
+  background-color: #fff;
+  max-width: 300px;
+  border: 1px solid $br-color;
+  border-top: 0;
+
+  &__logo {
+    text-align: center;
+    padding: 25px 40px;
+    border-bottom: 1px solid $br-color;
+    margin-bottom: 0;
+  }
+
+  .logo-text {
+    font-size: 10px;
+    color: #666666;
+    border-bottom: $br-color;
+    margin-top: 10px;
+  }
+
+  &-nav {
+
+    &__item {
+      padding: 25px 40px;
+      border-bottom: 1px solid $br-color;
+      font-size: $fz-md;
+    }
+
+    &__link {
+      color: $text-dark;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:after {
+        content: url("../../images/arrow.png");
+        line-height: 0;
+      }
+
+      &.active:after {
+        transform: rotateZ(180deg);
+      }
+    }
+  }
+}
+
+.sub-nav {
+  padding-top: 25px;
+  font-size: $fz-sm;
+
+  &__item {
+    padding: 10px 0 0 12px;
+  }
+
+  &__link {
+    color: $secondary-color;
+  }
+}

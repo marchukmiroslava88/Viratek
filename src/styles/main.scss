@@ -2,6 +2,9 @@
 @import "typography";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "layout/header";
+@import "layout/sidebar";
+@import "components/call-back";
+@import "components/buttons";
 
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;

@@ -12,6 +12,7 @@ $secondary-color: map-get($palette-primary, gray-lighten);
 $info-color: map-get($palette-primary, light-blue);
 
 $palette-secondary: (
+  black: #000,
   light : #fff,
   green: #3eb105,
   yellow: #ffa200,
@@ -20,6 +21,9 @@ $palette-secondary: (
 $success-color: map-get($palette-secondary, green);
 $warning-color: map-get($palette-secondary, yellow);
 $danger-color: map-get($palette-secondary, red);
+
+$text-dark: #000;
+$br-color: #e4e9f3;
 
 /*
  ## Font, line-height, font-size
