@@ -14,7 +14,10 @@
     }
 
     &--1:before {
-      content: url("../../images/icons/city.png");
+      content: "";
+      min-width: 56px;
+      height: 69px;
+      background: url("../../images/icons/sprite.png") -466px -178px;
     }
   }
 
