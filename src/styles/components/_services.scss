@@ -15,6 +15,7 @@
     &:hover {
       @include hover(background-color, $primary-color);
       color: $text-light;
+      cursor: pointer;
     }
 
     &:before {
