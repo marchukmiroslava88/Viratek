@@ -1,0 +1,49 @@
+.footer {
+  background-color: #0099e8;
+  color: $text-light;
+
+  &-nav {
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+
+    &__item {
+      padding: 0 35px;
+      white-space: nowrap;
+
+      &:first-child {
+        padding-left: 8px;
+      }
+    }
+
+    &__link {
+      color: $text-light;
+      font-size: $fz-sm;
+      font-weight: bold;
+      display: inline-block;
+      padding: 30px 0;
+      position: relative;
+
+      &:after {
+        content: "";
+        background: $text-light;
+        height: 2px;
+        width: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        bottom: 20px;
+        border-radius: 8px;
+        transition: width 0.3s;
+      }
+
+      &:hover {
+        color: $text-light;
+        text-decoration: none;
+
+        &:after {
+          width: 100%;
+        }
+      }
+
+    }
+  }
+}

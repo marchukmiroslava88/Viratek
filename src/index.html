@@ -91,7 +91,7 @@
           <!-- ./slider -->
 
           <section class="popular-services">
-            <h2 class="title-h2">Популярные услуги</h2>
+            <h2 class="title-h2 pb-4">Популярные услуги</h2>
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="popular-services__item popular-services__item--1">
@@ -146,7 +146,7 @@
           <!-- ./popular-services -->
 
           <section class="main-directions">
-            <h2 class="title-h2">Основные направления</h2>
+            <h2 class="title-h2 pb-4">Основные направления</h2>
             <div class="row">
               <div class="col-sm-6 col-xs-12">
                 <div>
@@ -196,7 +196,12 @@
               </div>
               <div class="project-card__descr">
                 <div class="project-card__title">Ремонт кухни под ключ 10 м.кв </div>
-                <div class="project-card__rating">stars</div>
+                <div class="project-card__rating">
+                  <div class="stars">
+                    <span class="stars__item"></span>
+                    <span class="stars__item stars__item--blue"></span>
+                  </div>
+                </div>
                 <div class="d-flex align-items-center justify-content-between">
                   <span>Площадь:</span><span>8 м.кв</span>
                 </div>
@@ -292,56 +297,66 @@
         <!-- ./main -->
       </div>
     </div>
-
-      <footer>
-        <img src="" alt="footer logo">
-        <nav class="footer-nav">
-          <ul class="footer-nav d-flex align-items-center justify-content-between">
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Акции</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Расчеты стоимости</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Примеры работ</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Цены</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Отзывы</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">О компании</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
-          </ul>
-        </nav>
-        <!-- ./footer-nav-->
-
-        <div class="d-flex align-items-center justify-content-between">
-          <div class="row">
-            <div class="col-xl-6 col-lg-12">
-              <div>Ежедневно с 09:00 до 20:00</div>
-              <div>+7 (343) 200-00-92</div>
-            </div>
-            <div class="col-xl-6 col-lg-12">
-              <div>WhatsApp</div>
-              <div>+7 (343) 200-00-92</div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xl-6 col-lg-12">
-              <div>Эл.почта:</div>
-              <div>Info@viratek.ru</div>
-            </div>
-            <div class="col-xl-6 col-lg-12">Заказать звонок</div>
-          </div>
-
-          <div class="row">
-            <div class="col-xl-6 col-lg-12">stars Оставить отзыв</div>
-            <div class="col-xl-6 col-lg-12">Мы в соц.сетях: social-icons</div>
-          </div>
-        </div>
-        <!-- ./footer-contacts-->
-
-        <div class="footer-info">
-          <span>Использование материалов сайта без согласования запрещено</span> <a href="#" class="ml-2">Политика конфидиенциальности</a>
-          <div>Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях информационные материалы и цены, размещенные на сайте, не являются публичной офертой</div>
-        </div>
-      </footer>
-      <!-- ./footer-->
   </div>
+
+  <footer class="footer">
+    <div class="container">
+      <nav>
+        <ul class="footer-nav d-flex align-items-center justify-content-between">
+          <li class="footer-nav__item"><a class="footer-nav__link cost_1 " href="#">Акции</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Расчеты стоимости</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Примеры работ</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Цены</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Отзывы</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#">О компании</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <!-- ./footer-nav-->
+
+      <div class="footer-contact row align-items-center justify-content-between">
+        <div class="col-lg-3 col-md-6 col-xs-12">
+          <img src="" alt="footer logo">
+          <div>© ВираТек - ремонт квартир,домов,<br>
+            коммерческоей недвижимости, 2019 год.</div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12">
+          <div>
+            <div>Ежедневно с 09:00 до 20:00</div>
+            <div>+7 (343) 200-00-92</div>
+          </div>
+          <div>
+            <div>Эл.почта:</div>
+            <div>Info@viratek.ru</div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-12">
+          <div>
+            <div>WhatsApp</div>
+            <div>+7 (343) 200-00-92</div>
+          </div>
+          <div>г. Екатеринбург,</div>
+          <div>ул. Малышева 60, оф 209</div>
+        </div>
+
+
+        <div class="footer-review col-lg-3 col-md-12">
+          <div>stars Оставить отзыв</div>
+          <div>Мы в соц.сетях: social-icons</div>
+        </div>
+      </div>
+      <!-- ./footer-contacts-->
+
+      <div class="footer-info">
+        <span>Использование материалов сайта без согласования запрещено</span> <a href="#" class="ml-2">Политика конфидиенциальности</a>
+        <div>Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях информационные материалы и цены, размещенные на сайте, не являются публичной офертой</div>
+      </div>
+    </div>
+  </footer>
+  <!-- ./footer-->
+
     <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

@@ -13,7 +13,7 @@ $info-color: map-get($palette-primary, light-blue);
 
 $palette-secondary: (
   black: #000,
-  light : #fff,
+  white : #fff,
   green: #3eb105,
   yellow: #ffa200,
   red: #ff3000
@@ -23,6 +23,7 @@ $warning-color: map-get($palette-secondary, yellow);
 $danger-color: map-get($palette-secondary, red);
 
 $text-dark: #000;
+$text-light: map-get($palette-secondary, white);
 $br-color: #e4e9f3;
 
 /*
