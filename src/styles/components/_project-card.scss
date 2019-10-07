@@ -1,0 +1,58 @@
+@import "../utils/_mixins";
+@import "../utils/_vars";
+
+.project-card {
+  &__photo {
+    width: 60%;
+    img {
+      width: 100%;
+    }
+  }
+  &__descr {
+    padding: 40px;
+    width: 40%;
+    > div {
+      border-top: 1px solid $br-color;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    border-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  &__rating {
+    border-top: 0 !important;
+  }
+
+  .estimate {
+
+    a {
+      border-bottom: 1px dashed;
+    }
+
+    a:hover {
+      border-bottom: 0;
+      text-decoration: none;
+    }
+
+    .estimate-icon {
+      color: #26a1ea;
+      width: 21px;
+      height: 24px;
+      background: url("../../images/icons/sprite.png") -613px -192px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .font-size-24 {
+    font-size: $lh-md;
+  }
+}
