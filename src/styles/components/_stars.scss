@@ -1,0 +1,15 @@
+@import "../utils/_mixins";
+
+.stars {
+  &__item {
+    &--blue {
+      width: 23px;
+      height: 22px;
+      background: url("../../images/icons/sprite.png") -613px -150px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
