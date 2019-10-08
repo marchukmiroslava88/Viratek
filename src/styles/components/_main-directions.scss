@@ -5,7 +5,8 @@
   &__item {
     margin-bottom: 40px;
     border: 1px solid $br-color;
-    height: 400px;
+    max-height: 400px;
+    overflow: hidden;
 
     img {
       max-width: 100%;
