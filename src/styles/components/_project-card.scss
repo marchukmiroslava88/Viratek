@@ -9,9 +9,7 @@
 
   &__photo {
     width: 60%;
-    img {
-      width: 100%;
-    }
+    overflow: hidden;
   }
 
   &__descr {
