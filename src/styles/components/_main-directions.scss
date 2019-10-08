@@ -4,22 +4,55 @@
 
   &__item {
     margin-bottom: 40px;
-    &:hover {
-      cursor: pointer;
-      @include hover(opacity, 0.7);
-    }
+    border: 1px solid $br-color;
+    height: 400px;
 
     img {
-      width: 100%;
+      max-width: 100%;
+      height: auto;
     }
   }
 
-  &__text {
-    bottom: 35px;
-    left: 45px;
-    div:first-child {
-      font-size: 30px;
-      font-weight: bold;
+  &__descr {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 35px 40px;
+    background: rgba(255,255,255,0);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(50%, rgba(255,255,255,0.65)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d671d6', endColorstr='#d671d6', GradientType=0 );
+  }
+
+  &__title {
+    font-size: $fz-lg;
+    font-weight: bold;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      width: 7px;
+      height: 11px;
+      margin-left: 20px;
+      margin-top: 5px;
+      background: url("../../images/icons/sprite.png") -613px -517px;
+      transition: margin-left 0.3s;
     }
+
+    &:hover:after {
+      margin-left: 30px;
+    }
+  }
+
+  &__info {
+    font-size: $fz-sm;
+    color: $secondary-color;
   }
 }
