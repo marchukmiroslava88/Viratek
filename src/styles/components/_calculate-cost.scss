@@ -1,0 +1,85 @@
+@import "../utils/_mixins";
+@import "../utils/_vars";
+
+.calculate-cost {
+  margin-bottom: 65px;
+
+  .title-h3 {
+    margin-bottom: 0;
+  }
+
+  &__subhead {
+    margin-bottom: 40px;
+    font-size: $lh-md;
+  }
+
+  &__item {
+    background-color: $aqua-color;
+    color: $primary-color;
+    padding: 20px;
+    &:before {
+      width: 35%;
+    }
+
+    &:hover {
+      @include hover(background-color, $primary-color);
+      color: $text-light;
+      cursor: pointer;
+    }
+    &--online:before {
+      content: "";
+      max-width: 48px;
+      height: 48px;
+      background: url("../../images/icons/sprite.png") -254px -349px;
+    }
+
+    &--online:hover:before {
+      max-width: 48px;
+      height: 48px;
+      background: url("../../images/icons/cost_1_white_icon.png");
+    }
+
+    &--project:before {
+      content: "";
+      max-width: 50px;
+      height: 50px;
+      background: url("../../images/icons/sprite.png") -114px -349px;
+    }
+
+    &--project:hover:before {
+      max-width: 50px;
+      height: 50px;
+      background: url("../../images/icons/cost_2_white_icon.png");
+    }
+
+    &--call:before {
+      content: "";
+      max-width: 55px;
+      height: 46px;
+      background: url("../../images/icons/sprite.png") -282px -190px;
+    }
+
+    &--call:hover:before {
+      max-width: 55px;
+      height: 46px;
+      background: url("../../images/icons/cost_3_white_icon.png");
+    }
+
+    &--consultation:before {
+      content: "";
+      max-width: 52px;
+      height: 50px;
+      background: url("../../images/icons/sprite.png") -466px -347px;
+    }
+
+    &--consultation:hover:before {
+      max-width: 52px;
+      height: 50px;
+      background: url("../../images/icons/cost_4_white_icon.png");
+    }
+  }
+
+  &__text {
+    width: 65%;
+  }
+}

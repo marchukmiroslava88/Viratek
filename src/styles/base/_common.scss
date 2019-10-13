@@ -10,7 +10,17 @@
   font-size: $fz-lg;
 }
 
+.title-h4 {
+  font-weight: bold;
+  font-size: $lh-md;
+}
+
 p {
   font-size: $fz-sm;
   color: $secondary-color;
+}
+
+hr.divider {
+  margin-top: 90px;
+  margin-bottom: 90px;
 }

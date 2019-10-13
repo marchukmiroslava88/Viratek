@@ -6,10 +6,13 @@ $palette-primary: (
   blue : #0099e8,
   light-blue : #00acdc,
   gray-lighten: #676767,
+  aqua: #e5f5fd
 );
+
 $primary-color: map-get($palette-primary, blue);
 $secondary-color: map-get($palette-primary, gray-lighten);
 $info-color: map-get($palette-primary, light-blue);
+$aqua-color: map_get($palette-primary, aqua);
 
 $palette-secondary: (
   black: #000,
@@ -45,4 +48,3 @@ $lh-md: 24px;
 
 $mb80: 80px;
 $mb50: 50px;
-
