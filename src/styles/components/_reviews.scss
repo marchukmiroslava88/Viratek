@@ -1,0 +1,31 @@
+@import "../utils/_vars";
+
+.reviews {
+  margin-top: 45px;
+  .title-h3 {
+    margin-bottom: 10px;
+  }
+
+  &__descr {
+    margin-bottom: 35px;
+  }
+
+  &__item {
+    border: 1px solid $br-color;
+  }
+
+  &__content {
+    padding: 15px 25px 10px;
+
+    .font-weight-bold {
+      p {
+        color: #030303;
+      }
+    }
+  }
+
+  &__name {
+    margin-top: 2px;
+    margin-right: 15px;
+  }
+}

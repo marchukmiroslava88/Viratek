@@ -3,9 +3,7 @@
 .seo-text {
   margin-top: 45px;
   .title-h3 {
-    font-weight: bold;
-    font-size: $fz-lg;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     span {
       color: #d3d3d3;
@@ -14,11 +12,6 @@
 
   &__title {
     font-size: $fz-md;
-    margin-bottom: 20px;
-  }
-
-  p {
-    font-size: $fz-sm;
-    color: $secondary-color;
+    margin-bottom: 10px;
   }
 }
