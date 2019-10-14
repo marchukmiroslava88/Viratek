@@ -1,5 +1,41 @@
+@import "../utils/_vars";
+
 .list-works {
   h2 {
     font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    font-size: $fz-sm;
+    color: $secondary-color;
+
+    li {
+      list-style-type: square;
+      color: $primary-color;
+      padding-left: 10px;
+      margin-left: 40px;
+      margin-bottom: 8px;
+
+      &:first-child {
+        margin-top: 20px;
+      }
+      span {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  ul,
+  p {
+    margin-bottom: 25px;
+  }
+
+  &__img-wrapper {
+    margin-top: 35px;
+
+    img {
+      width: 100%;
+    }
   }
 }
