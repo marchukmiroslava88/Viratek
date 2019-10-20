@@ -1,0 +1,87 @@
+@import "../utils/_mixins";
+@import "../utils/_vars";
+
+.calculate-project {
+  &__descr {
+    &__item {
+      &--1 {
+        a {
+          color: $success-color;
+          border-bottom: 1px dashed $success-color;
+          margin-right: 5px;
+        }
+        &:before {
+          content: "";
+          width: 36px;
+          height: 36px;
+          background: url("../../images/icons/sprite.png") -553px -375px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+      }
+      &--2 {
+        a {
+          color: $warning-color;
+          border-bottom: 1px dashed $warning-color;
+          margin-right: 5px;
+        }
+        &:before {
+          content: "";
+          width: 36px;
+          height: 36px;
+          background: url("../../images/icons/sprite.png") -553px -431px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+      }
+      &--3 {
+        a {
+          color: $danger-color;
+          border-bottom: 1px dashed $danger-color;
+          margin-right: 5px;
+        }
+        &:before {
+          content: "";
+          width: 36px;
+          height: 36px;
+          background: url("../../images/icons/sprite.png") -224px -79px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  a:hover {
+    border-bottom: none;
+    text-decoration: none;
+  }
+  &__cost {
+    margin-top: 55px;
+    p {
+      margin-bottom: 0;
+      line-height: 1.2;
+    }
+    &__price {
+      font-size: $fz-lg;
+      color: $text-dark;
+      font-weight: bold;
+    }
+    &__link {
+      &:before {
+        content: "";
+        width: 20px;
+        height: 25px;
+        background: url("../../images/icons/sprite.png") -613px -236px;
+        margin-right: 10px;
+      }
+      &:hover {
+        @include hover(background-color, #0069d9);
+        color: $text-light;
+      }
+      margin-left: 40px;
+      color: $text-light;
+      background-color: $primary-color;
+      padding: 10px 30px;
+    }
+  }
+}

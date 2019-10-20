@@ -1,0 +1,38 @@
+@import "../utils/_mixins";
+@import "../utils/_vars";
+
+.costing-examples {
+  &__descr {
+    margin-bottom: 40px;
+  }
+  &__item {
+    &__link {
+      display: flex;
+      font-size: 15px;
+      &:before {
+        content: "";
+        width: 21px;
+        height: 24px;
+        background: url("../../images/icons/sprite.png") -613px -192px;
+      }
+    }
+    &__price {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  &__content {
+    padding: 20px;
+    p {
+      margin-bottom: 5px;
+    }
+    a {
+      border-bottom: 1px dashed;
+      margin-left: 5px;
+      &:hover {
+        text-decoration: none;
+        border-bottom: none;
+      }
+    }
+  }
+}
