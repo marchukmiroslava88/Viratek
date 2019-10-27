@@ -1,0 +1,14 @@
+@import "../utils/_mixins";
+@import "../utils/_vars";
+
+.repair-style {
+  &__title {
+    font-size: $lh-md;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  &__content {
+    padding: 35px;
+    border: 1px solid $br-color;
+  }
+}
