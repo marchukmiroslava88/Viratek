@@ -3,6 +3,11 @@
 
 .calculate-cost {
   margin-bottom: 55px;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
   h6 {
     margin-bottom: 20px;
@@ -85,5 +90,62 @@
 
   &__text {
     width: 65%;
+  }
+
+  &__online {
+    max-width: 800px;
+    margin: 0 auto;
+    h2 {
+      font-size: $fz-xl;
+      margin-top: 65px;
+    }
+    .row {
+      flex-direction: column;
+      margin-top: 65px;
+      .col-md-3 {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    .calculate-cost__text {
+      font-size: $lh-md;
+      font-weight: bold;
+      color: $text-dark;
+      p {
+        font-weight: normal;
+      }
+    }
+    .calculate-cost__item {
+      border: 1px solid #ced8dd;
+      background-color: transparent;
+      &--online:before {
+        max-width: 72px;
+        height: 72px;
+        background: url("../../images/icons/cost_1_big_icon.png");
+      }
+      &--online:hover:before {
+        max-width: 72px;
+        height: 72px;
+        background: url("../../images/icons/cost_1_big_white_icon.png");
+      }
+      &--project:before {
+        content: "";
+        max-width: 67px;
+        height: 67px;
+        background: url("../../images/icons/cost_2_big_icon.png");
+      }
+      &--project:hover:before {
+        max-width: 67px;
+        height: 67px;
+        background: url("../../images/icons/sprite.png") -378px -192px;
+      }
+      &:hover {
+        .calculate-cost__text,
+        p {
+          color: $text-light;
+        }
+      }
+
+    }
   }
 }

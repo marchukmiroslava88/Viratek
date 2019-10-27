@@ -1,0 +1,11 @@
+@import "../utils/_mixins";
+@import "../utils/_vars";
+
+.online-calc-step-1 {
+  max-width: 800px;
+  margin: 0 auto;
+  h2 {
+    font-size: $fz-xl;
+    margin-top: 65px;
+  }
+}
