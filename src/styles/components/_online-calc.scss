@@ -1,0 +1,154 @@
+@import "../utils/_mixins";
+@import "../utils/_vars";
+
+.online-calc {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #999;
+
+  h2 {
+    font-size: $fz-xl;
+    margin-top: 65px;
+    color: $text-dark;
+  }
+
+  .progress {
+    height: 5px;
+    border-radius: inherit;
+    margin-bottom: 115px;
+    &:before {
+      content: "";
+      border: 5px solid $primary-color;
+    }
+  }
+
+  .button-next {
+    background: #ffba00;
+    float: right;
+    padding: 10px 30px;
+    display: flex;
+    font-size: $fz-md;
+    color: $text-light;
+    align-items: center;
+    margin-bottom: 65px;
+
+    &:after {
+      content: "";
+      width: 30px;
+      height: 18px;
+      background: url("../../images/icons/sprite.png") -224px -507px;
+      margin-left: 15px;
+    }
+    &:hover {
+      text-decoration: none;
+      @include hover(background-color, #ffba00 * 0.9);
+    }
+  }
+}
+
+.online-calc-step-1 {
+  &__title {
+    font-size: $fz-md;
+    color: $text-dark;
+    margin-bottom: 20px;
+  }
+  .progress:before {
+    width: 20%;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+  }
+
+  input[type="text"] {
+    width: 137px;
+    margin-right: 5px;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  input[type="radio"] + label {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 15px 20px;
+    background-color: $text-light;
+    border: 1px solid #ced8dd;
+    cursor: pointer;
+    color: $primary-color;
+    font-size: $fz-md;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      @include hover(background-color, $primary-color);
+      color: $text-light;
+    }
+  }
+
+  input[type="radio"]:checked + label {
+    background-color: $primary-color;
+    color: $text-light;
+  }
+}
+
+.online-calc-step-2 {
+  .progress:before {
+    width: 40%;
+  }
+
+  .d-flex {
+    max-width: 740px;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: $lh-md;
+    color: $text-dark;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+    border: 2px solid #ced8dd;
+    padding: 40px;
+    width: 345px;
+    &:hover {
+      border: 2px solid $primary-color;
+    }
+    label {
+      position: relative;
+      font-size: $fz-md;
+      color: $text-dark;
+      margin-left: 10px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  input[type="radio"] {
+    margin-top: 40px;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      background: url("../../images/icons/unchecked_icon.png");
+      width: 24px;
+      height: 24px;
+      top: -6px;
+      left: -4px;
+    }
+  }
+
+  input[type="radio"]:checked {
+    &:after {
+      background: url("../../images/icons/checked_icon.png");
+    }
+  }
+}
