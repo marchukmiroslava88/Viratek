@@ -152,3 +152,50 @@
     }
   }
 }
+
+.online-calc-step-3 {
+  .progress:before {
+    width: 60%;
+  }
+
+  &__title {
+    font-size: $lh-md;
+    color: $text-dark;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+
+    label {
+      position: relative;
+      font-size: $fz-md;
+      color: $text-dark;
+      margin-left: 15px;
+    }
+
+    p {
+      margin-left: 33px;
+    }
+  }
+
+  input[type="radio"] {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      background: url("../../images/icons/unchecked_icon.png");
+      width: 24px;
+      height: 24px;
+      top: -6px;
+      left: -4px;
+    }
+  }
+
+  input[type="radio"]:checked {
+    &:after {
+      background: url("../../images/icons/checked_icon.png");
+    }
+  }
+}
