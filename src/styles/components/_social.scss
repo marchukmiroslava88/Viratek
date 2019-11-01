@@ -1,0 +1,21 @@
+.social-icon {
+  margin-right: 8px;
+
+  &__inst {
+    width: 32px;
+    height: 33px;
+    background: url("../../images/icons/sprite.png") -406px -422px;
+  }
+
+  &__youtube {
+    width: 35px;
+    height: 29px;
+    background: url("../../images/icons/sprite.png") -458px -422px;
+  }
+
+  &__vk {
+    width: 31px;
+    height: 32px;
+    background: url("../../images/icons/sprite.png") -72px -507px;
+  }
+}

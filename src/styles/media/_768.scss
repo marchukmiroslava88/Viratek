@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .contact-us {
+    padding: 15px 0;
+
+    &__text {
+      font-size: 15px;
+    }
+  }
+  .main-slider {
+    margin-bottom: 50px;
+  }
+  .popular-services {
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,21 @@
+@media (max-width: 1200px) {
+  .show-1200 {
+    display: block;
+  }
+  .hide-1200 {
+    display: none;
+  }
+  .header-nav {
+    margin-left: auto;
+  }
+  .contact-us__text {
+    text-align: center;
+    font-size: $fz-md;
+  }
+  .main-content {
+    width: 100%;
+  }
+  .main-slider {
+    margin-top: 90px;
+  }
+}

@@ -10,11 +10,11 @@
   </head>
   <body>
 
-  <header class="header">
+  <header class="header hide-991">
     <div class="container">
       <nav>
         <ul class="header-nav d-flex align-items-center mb-0">
-          <li class="header-nav__item"><a class="header-nav__link" href="#">Акции</a></li>
+          <li class="header-nav__item"><a class="header-nav__link stock" href="#">Акции</a></li>
           <li class="header-nav__item"><a class="header-nav__link" href="#">Расчеты стоимости</a></li>
           <li class="header-nav__item"><a class="header-nav__link" href="#">Примеры работ</a></li>
           <li class="header-nav__item"><a class="header-nav__link" href="#">Цены</a></li>
@@ -29,442 +29,486 @@
 
 
   <div class="container">
-    <div class="row">
-      <aside class="col-3">
-        <div class="sidebar">
-          <h1 class="sidebar__logo">
-            <img src="./images/logo.png" alt="logo">
-            <div class="logo-text">Группа компаний по ремонту и инженерных решений для дома и офиса!</div>
-          </h1>
-          <nav>
-            <ul class="sidebar-nav">
-              <li class="sidebar-nav__item">
-                <a class="sidebar-nav__link" href="#">Ремонт под ключ</a>
-              </li>
-              <li class="sidebar-nav__item">
-                <a class="sidebar-nav__link active" href="#">Отделочные работы</a>
-                <ul class="sub-nav">
-                  <span class="font-weight-bold">Ремонт пола</span>
-                  <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
-                  <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
-                  <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
-                  <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
-                  <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
-                </ul>
-                <ul class="sub-nav">
-                  <span class="font-weight-bold">Ремонт стен</span>
-                  <li class="sub-nav__item"><a href="#" class="sub-nav__link">Штукатурка стен</a></li>
-                  <li class="sub-nav__item"><a href="#" class="sub-nav__link">Поклейка обоев</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <div class="call-back">
-            <div class="call-back__photo">
-              <img src="./images/manager.png" alt="manager photo">
-            </div>
-            <div class="call-back__text">
-              <div class="text-muted">Мастер консультант</div>
-              <div class="call-back__manager">Артур Бубалех</div>
-            </div>
-            <div class="call-back__contact">
-              <a href="tel:">+7(343)206-44-88</a>
-            </div>
-            <button class="btn btn-primary">Заказать звонок</button>
+    <div class="d-flex">
+      <aside class="sidebar hide-1200">
+        <h1 class="sidebar__logo">
+          <img src="./images/logo.png" alt="logo">
+          <div class="logo-text">Группа компаний по ремонту и инженерных <br> решений для дома и офиса!</div>
+        </h1>
+        <nav>
+          <ul class="sidebar-nav">
+            <li class="sidebar-nav__item">
+              <a class="sidebar-nav__link" href="#">Ремонт под ключ</a>
+            </li>
+            <li class="sidebar-nav__item">
+              <a class="sidebar-nav__link active" href="#">Отделочные работы</a>
+              <ul class="sub-nav">
+                <span class="font-weight-bold">Ремонт пола</span>
+                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
+                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
+                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
+                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
+                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
+              </ul>
+              <ul class="sub-nav">
+                <span class="font-weight-bold">Ремонт стен</span>
+                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Штукатурка стен</a></li>
+                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Поклейка обоев</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="call-back">
+          <div class="call-back__photo">
+            <img src="./images/manager.png" alt="manager photo">
           </div>
+          <div class="call-back__text">
+            <div class="text-muted">Мастер консультант</div>
+            <div class="call-back__manager">Артур Бубалех</div>
+          </div>
+          <div class="call-back__contact">
+            <a href="tel:">+7(343)206-44-88</a>
+          </div>
+          <button class="btn btn-primary">Заказать звонок</button>
         </div>
       </aside>
       <!-- ./aside -->
 
-      <div class="col-xl-9 col-lg-12">
-        <main>
-          <div class="contact-us">
-            <div class="contact-us__text">Ремонт ванной комнаты в Екатеринбурге: Звоните! — 8 (343) 903-44-33</div>
-            <button class="btn btn-primary">Заказать звонок</button>
-          </div>
+      <main class="main-content">
+        <div class="contact-us">
+            <h1 class="show-1200 hide-991">
+              <img src="./images/logo-tab.png" alt="logo">
+            </h1>
+          <div class="contact-us__text">Ремонт ванной комнаты в Екатеринбурге: <span>Звоните! — 8 (343) 903-44-33</span></div>
+          <button class="btn btn-primary hide-991">Заказать звонок</button>
+        </div>
 
-          <section class="main-slider">
-            <img src="./images/slide1.png" alt="slide1">
-            <img src="./images/slide1.png" alt="slide2">
-            <img src="./images/slide1.png" alt="slide3">
-          </section>
-          <!-- ./slider -->
+        <nav class="show-1200 hide-991">
+          <ul class="tab-nav d-flex">
+            <li class="tab-nav__item">
+              <a class="tab-nav__link" href="#">Ремонт под ключ</a>
+            </li>
+            <li class="tab-nav__item">
+              <a class="tab-nav__link" href="#">Ремонт под ключ</a>
+            </li>
+            <li class="tab-nav__item">
+              <a class="tab-nav__link" href="#">Ремонт под ключ</a>
+            </li>
+            <li class="tab-nav__item">
+              <a class="tab-nav__link active" href="#">Отделочные работы</a>
+              <ul class="tab-sub-nav">
+                <span class="font-weight-bold">Ремонт пола</span>
+                <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
+                <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
+                <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
+                <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
+                <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
+              </ul>
+              <ul class="tab-sub-nav">
+                <span class="font-weight-bold">Ремонт стен</span>
+                <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Штукатурка стен</a></li>
+                <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Поклейка обоев</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- ./tab-nav -->
 
-          <section class="popular-services">
-            <h2 class="title-h2 pb-4">Популярные услуги</h2>
-            <div class="row">
-              <div class="col-md-4 col-sm-6 col-xs-12 d-flex">
-                <div class="popular-services__item popular-services__item--1">
-                  <div class="popular-services__descr">
-                    <div class="popular-services__text">Ремонт в новостройках</div>
-                    <div class="popular-services__price">от 2 800 руб/м2</div>
-                  </div>
+        <div class="show-991">
+          <nav class="mob-nav row justify-content-between align-items-center">
+            <img src="./images/logo-footer.png" alt="">
+            <div class="d-flex align-items-center">
+              <img src="" alt="ph">
+              <button>menu</button>
+              <ul style="position: absolute; display: none">
+                <li class="mob-nav__item">
+                  <a class="mob-nav__link" href="#">Ремонт под ключ</a>
+                </li>
+                <li class="mob-nav__item">
+                  <a class="mob-nav__link" href="#">Ремонт под ключ</a>
+                </li>
+                <li class="mob-nav__item">
+                  <a class="mob-nav__link" href="#">Ремонт под ключ</a>
+                </li>
+                <li class="mob-nav__item">
+                  <a class="mob-nav__link active" href="#">Отделочные работы</a>
+                  <ul class="mob-sub-nav">
+                    <span class="font-weight-bold">Ремонт пола</span>
+                    <li class="mob-sub-nav__item"><a href="#" class="mob-sub-nav__link">Укладка ламината</a></li>
+                    <li class="mob-sub-nav__item"><a href="#" class="mob-sub-nav__link">Укладка ламината</a></li>
+                    <li class="mob-sub-nav__item"><a href="#" class="mob-sub-nav__link">Укладка ламината</a></li>
+                    <li class="mob-sub-nav__item"><a href="#" class="mob-sub-nav__link">Укладка ламината</a></li>
+                    <li class="mob-sub-nav__item"><a href="#" class="mob-sub-nav__link">Укладка ламината</a></li>
+                  </ul>
+                  <ul class="mob-sub-nav">
+                    <span class="font-weight-bold">Ремонт стен</span>
+                    <li class="mob-sub-nav__item"><a href="#" class="mob-sub-nav__link">Штукатурка стен</a></li>
+                    <li class="mob-sub-nav__item"><a href="#" class="mob-sub-nav__link">Поклейка обоев</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- ./mob-nav -->
+
+        <section class="main-slider">
+          <img src="./images/slide1.png" alt="slide1">
+          <img src="./images/slide1.png" alt="slide2">
+          <img src="./images/slide1.png" alt="slide3">
+        </section>
+        <!-- ./slider -->
+
+        <section class="popular-services">
+          <h2 class="title-h2 pb-4">Популярные услуги</h2>
+          <div class="row">
+              <div class="popular-services__item popular-services__item--1">
+                <div class="popular-services__descr">
+                  <div class="popular-services__text">Ремонт в новостройках</div>
+                  <div class="popular-services__price">от 2 800 руб/м2</div>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 col-xs-12 d-flex">
-                <div class="popular-services__item popular-services__item--2">
-                  <div class="popular-services__descr">
-                    <div class="popular-services__text">Ремонт квартир под ключ</div>
-                    <div class="popular-services__price">от 2 800 руб/м2</div>
-                  </div>
+              <div class="popular-services__item popular-services__item--2">
+                <div class="popular-services__descr">
+                  <div class="popular-services__text">Ремонт квартир под ключ</div>
+                  <div class="popular-services__price">от 2 800 руб/м2</div>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 col-xs-12 d-flex">
-                <div class="popular-services__item popular-services__item--3">
-                  <div class="popular-services__descr">
-                    <div class="popular-services__text">Ремонт в частном доме</div>
-                    <div class="popular-services__price">от 3 800 руб/м2</div>
-                  </div>
+              <div class="popular-services__item popular-services__item--3">
+                <div class="popular-services__descr">
+                  <div class="popular-services__text">Ремонт в частном доме</div>
+                  <div class="popular-services__price">от 3 800 руб/м2</div>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 col-xs-12 d-flex">
-                <div class="popular-services__item popular-services__item--4">
-                  <div class="popular-services__descr">
-                    <div class="popular-services__text">Ремонт ванной комнаты</div>
-                    <div class="popular-services__price">от 2 800 руб/м2</div>
-                  </div>
+              <div class="popular-services__item popular-services__item--4">
+                <div class="popular-services__descr">
+                  <div class="popular-services__text">Ремонт ванной комнаты</div>
+                  <div class="popular-services__price">от 2 800 руб/м2</div>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 col-xs-12 d-flex">
-                <div class="popular-services__item popular-services__item--5">
-                  <div class="popular-services__descr">
-                    <div class="popular-services__text">Ремонт туалета</div>
-                    <div class="popular-services__price">от 2 800 руб/м2</div>
-                  </div>
+              <div class="popular-services__item popular-services__item--5">
+                <div class="popular-services__descr">
+                  <div class="popular-services__text">Ремонт туалета</div>
+                  <div class="popular-services__price">от 2 800 руб/м2</div>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 col-xs-12 d-flex">
-                <div class="popular-services__item popular-services__item--6">
-                  <div class="popular-services__descr">
-                    <div class="popular-services__text">Ремонт кухни</div>
-                    <div class="popular-services__price">от 2 800 руб/м2</div>
-                  </div>
+              <div class="popular-services__item popular-services__item--6">
+                <div class="popular-services__descr">
+                  <div class="popular-services__text">Ремонт кухни</div>
+                  <div class="popular-services__price">от 2 800 руб/м2</div>
                 </div>
               </div>
             </div>
-          </section>
-          <!-- ./popular-services -->
+        </section>
+        <!-- ./popular-services -->
 
-          <section class="main-directions">
-            <h2 class="title-h2 pb-4">Основные направления</h2>
-            <div class="row">
-              <div class="col-sm-6 col-xs-12 d-flex">
-                <div class="main-directions__item main-directions__item--1 position-relative">
-                  <img src="images/main_direction_1.png" alt="repair of premises">
-                  <div class="main-directions__descr position-absolute">
-                    <div class="main-directions__title">Ремонт помещений</div>
-                    <div class="main-directions__info">Ремонт любых объектов под ключ, с гарантией, от профессионалов!</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-xs-12 d-flex">
-                <div class="main-directions__item main-directions__item--2 position-relative">
-                  <img src="images/main_direction_2.png" alt="finishing work">
-                  <div class="main-directions__descr position-absolute">
-                    <div class="main-directions__title">Отделочные работы</div>
-                    <div class="main-directions__info">Разовые работы, пол, потолок, стены!</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-xs-12 d-flex">
-                <div class="main-directions__item main-directions__item--3 position-relative">
-                  <img src="images/main_direction_3.png" alt="outdoor work">
-                  <div class="main-directions__descr position-absolute">
-                    <div class="main-directions__title">Наружные работы</div>
-                    <div class="main-directions__info">Строительство и ремонт зданий и сооружений</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-xs-12 d-flex">
-                <div class="main-directions__item main-directions__item--4 position-relative">
-                  <img src="images/main_direction_4.png" alt="engineering communication">
-                  <div class="main-directions__descr position-absolute">
-                    <div class="main-directions__title">Инженерные коммуникации</div>
-                    <div class="main-directions__info">Ремонт любых объектов с гарантией от профессионалов!</div>
-                  </div>
+        <section class="main-directions">
+          <h2 class="title-h2 pb-4">Основные направления</h2>
+          <div class="row">
+            <div class="col-sm-6 col-xs-12 d-flex">
+              <div class="main-directions__item main-directions__item--1 position-relative">
+                <img src="images/main_direction_1.png" alt="repair of premises">
+                <div class="main-directions__descr position-absolute">
+                  <div class="main-directions__title">Ремонт помещений</div>
+                  <div class="main-directions__info">Ремонт любых объектов под ключ, с гарантией, от профессионалов!</div>
                 </div>
               </div>
             </div>
-          </section>
-          <!-- ./main-directions -->
-
-          <section class="completed-projects">
-            <div class="complete-projects-title">
-              <h2 class="title-h2">Выполненные проекты</h2>
-              <div>
-                <div>Делаем все чтобы наши клиенты оставались довольны результатом и рекомендовали нас своим друзьям и знакомым! Присоеденяйтесь и вы.</div>
-                <div class="font-weight-bold">Остальные проекты смотрите в разделе <a href="#">выполненные работы!</a></div>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="project-card__photo">
-                <img src="./images/project-photo.png" alt="projects photo" class="mx-auto">
-              </div>
-              <div class="project-card__descr">
-                <div class="project-card__title">Ремонт кухни под ключ 10 м.кв </div>
-                <div class="project-card__rating">
-                  <div class="stars">
-                    <div class="stars__item d-flex">
-                      <div class="stars__item stars__item--blue"></div>
-                      <div class="stars__item stars__item--blue"></div>
-                      <div class="stars__item stars__item--blue"></div>
-                      <div class="stars__item stars__item--blue"></div>
-                      <div class="stars__item stars__item--blue"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="project-card__property">
-                  <span>Площадь:</span><span>8 м.кв</span>
-                </div>
-                <div class="project-card__property">
-                  <span>Срок выполнения:</span><span>10 дней</span>
-                </div>
-                <div class="project-card__property">
-                  <span>Полотно MonLange M7001 (5.40)</span><span>8 м.кв</span>
-                </div>
-                <div class="project-card__property">
-                  <span>Профиль стеновой невидимый</span><span>10 дней</span>
-                </div>
-                <div class="project-card__property">
-                  <span>Лента маскировочная универсальная белая</span><span>8 м.кв</span>
-                </div>
-                <div class="project-card__property">
-                  <span>Обработка угла</span><span>10 дней</span>
-                </div>
-                <div class="project-card__property project-estimate">
-                  <div class="d-flex align-items-center">
-                    <div class="project-estimate__icon mr-2"></div>
-                    <a class="project-estimate__link" href="#">Смета проекта</a>
-                  </div>
-                  <div class="project-estimate__price">257 920 руб.</div>
+            <div class="col-sm-6 col-xs-12 d-flex">
+              <div class="main-directions__item main-directions__item--2 position-relative">
+                <img src="images/main_direction_2.png" alt="finishing work">
+                <div class="main-directions__descr position-absolute">
+                  <div class="main-directions__title">Отделочные работы</div>
+                  <div class="main-directions__info">Разовые работы, пол, потолок, стены!</div>
                 </div>
               </div>
             </div>
-            <div class="project-card">
-              <div class="project-card__photo">
-                <img src="./images/project-photo.png" alt="projects photo" class="mx-auto">
-              </div>
-              <div class="project-card__descr">
-                <div class="project-card__title">Ремонт кухни под ключ 10 м.кв </div>
-                <div class="project-card__rating">
-                  <div class="stars">
-                    <div class="stars__item d-flex">
-                      <div class="stars__item stars__item--blue"></div>
-                      <div class="stars__item stars__item--blue"></div>
-                      <div class="stars__item stars__item--blue"></div>
-                      <div class="stars__item stars__item--blue"></div>
-                      <div class="stars__item stars__item--blue"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="project-card__property">
-                  <span>Площадь:</span><span>8 м.кв</span>
-                </div>
-                <div class="project-card__property">
-                  <span>Срок выполнения:</span><span>10 дней</span>
-                </div>
-                <div class="project-card__property">
-                  <span>Полотно MonLange M7001 (5.40)</span><span>8 м.кв</span>
-                </div>
-                <div class="project-card__property">
-                  <span>Профиль стеновой невидимый</span><span>10 дней</span>
-                </div>
-                <div class="project-card__property">
-                  <span>Лента маскировочная универсальная белая</span><span>8 м.кв</span>
-                </div>
-                <div class="project-card__property">
-                  <span>Обработка угла</span><span>10 дней</span>
-                </div>
-                <div class="project-card__property project-estimate">
-                  <div class="d-flex align-items-center">
-                    <div class="project-estimate__icon mr-2"></div>
-                    <a class="project-estimate__link" href="#">Смета проекта</a>
-                  </div>
-                  <div class="project-estimate__price">257 920 руб.</div>
+            <div class="col-sm-6 col-xs-12 d-flex">
+              <div class="main-directions__item main-directions__item--3 position-relative">
+                <img src="images/main_direction_3.png" alt="outdoor work">
+                <div class="main-directions__descr position-absolute">
+                  <div class="main-directions__title">Наружные работы</div>
+                  <div class="main-directions__info">Строительство и ремонт зданий и сооружений</div>
                 </div>
               </div>
             </div>
-            <div class="project-card">
-              <div class="project-card__photo">
-                <img src="./images/project-photo.png" alt="projects photo" class="mx-auto">
-              </div>
-              <div class="project-card__descr">
-                <div class="project-card__title">Ремонт кухни под ключ 10 м.кв </div>
-                <div class="project-card__rating">
-                  <div class="stars">
-                    <div class="stars__item d-flex">
-                      <div class="stars__item stars__item--blue"></div>
-                      <div class="stars__item stars__item--blue"></div>
-                      <div class="stars__item stars__item--blue"></div>
-                      <div class="stars__item stars__item--blue"></div>
-                      <div class="stars__item stars__item--blue"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="project-card__property">
-                  <span>Площадь:</span><span>8 м.кв</span>
-                </div>
-                <div class="project-card__property">
-                  <span>Срок выполнения:</span><span>10 дней</span>
-                </div>
-                <div class="project-card__property">
-                  <span>Полотно MonLange M7001 (5.40)</span><span>8 м.кв</span>
-                </div>
-                <div class="project-card__property">
-                  <span>Профиль стеновой невидимый</span><span>10 дней</span>
-                </div>
-                <div class="project-card__property">
-                  <span>Лента маскировочная универсальная белая</span><span>8 м.кв</span>
-                </div>
-                <div class="project-card__property">
-                  <span>Обработка угла</span><span>10 дней</span>
-                </div>
-                <div class="project-card__property project-estimate">
-                  <div class="d-flex align-items-center">
-                    <div class="project-estimate__icon mr-2"></div>
-                    <a class="project-estimate__link" href="#">Смета проекта</a>
-                  </div>
-                  <div class="project-estimate__price">257 920 руб.</div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- ./completed-projects -->
-
-          <section class="seo-text">
-            <h3 class="title-h3">Сео текст <span>(блок текст)</span></h3>
-            <div class="seo-text__title">Кроме того, перед проведением ремонта санузла проводится серьезная подготовительная работа:</div>
-            <p>Составление сметы – это чрезвычайно важный этап.</p>
-            <p>Стоимость ремонта ванной определяется достаточно точно и редко пересматривается – это одно из наших основных преимуществ.</p>
-            <p>Исходя из Вашего бюджета и пожеланий, мы подберем для Вас соответствующий комплекс услуг.</p>
-            <p>Притом мы предлагаем Вам как ремонт эконом-класса, так и ремонт ванной комнаты среднего ценового диапазона и VIP-ремонт. Кстати, цена ремонта ванной – это не единственное преимущество «Ленремонта». Во-первых, у нас работают первоклассные мастера, каждый из которых отбирался лично директором «Ленремонта».</p>
-          </section>
-          <!-- ./seo-text -->
-
-          <section class="reviews">
-            <div class="reviews__descr">
-              <h3 class="title-h3">Отзывы наших клиентов</h3>
-              <div>
-                <p class="mb-0">Полностью готовая ванная комната по завершению всех ремонтных работ, включая все мелочи. Хозяину остается только войти в ванную комнату и повернуть кран.</p>
-              </div>
-              <div class="font-weight-bold">Больше видео отзывов Вы можете <a href="#">увидить здесь.</a></div>
-            </div>
-            <div class="row">
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="reviews__item">
-                  <div class="reviews__video">
-                    <iframe width="100%" src="https://www.youtube.com/embed/OfZarklsK8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                  <div class="reviews__content">
-                    <div class="font-weight-bold">
-                      <p>Отзыв о ремонте 3-х комн. квартиры</p>
-                    </div>
-                    <div class="d-flex">
-                      <p class="reviews__name">Тоня</p>
-                      <div class="stars">
-                        <div class="stars__item d-flex">
-                          <div class="stars__item stars__item--blue"></div>
-                          <div class="stars__item stars__item--blue"></div>
-                          <div class="stars__item stars__item--blue"></div>
-                          <div class="stars__item stars__item--blue"></div>
-                          <div class="stars__item stars__item--blue"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="reviews__item">
-                  <div class="reviews__video">
-                    <iframe width="100%" src="https://www.youtube.com/embed/OfZarklsK8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                  <div class="reviews__content">
-                    <div class="font-weight-bold">
-                      <p>Ремонт небольшой ванной комнаты</p>
-                    </div>
-                    <div class="d-flex">
-                      <p class="reviews__name">Мария</p>
-                      <div class="stars">
-                        <div class="stars__item d-flex">
-                          <div class="stars__item stars__item--blue"></div>
-                          <div class="stars__item stars__item--blue"></div>
-                          <div class="stars__item stars__item--blue"></div>
-                          <div class="stars__item stars__item--blue"></div>
-                          <div class="stars__item stars__item--blue"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="reviews__item">
-                  <div class="reviews__video">
-                    <iframe width="100%" src="https://www.youtube.com/embed/OfZarklsK8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                  <div class="reviews__content">
-                    <div class="font-weight-bold">
-                      <p>Спасибо за ремнот!</p>
-                    </div>
-                    <div class="d-flex">
-                      <p class="reviews__name">Вталий Воронов</p>
-                      <div class="stars">
-                        <div class="stars__item d-flex">
-                          <div class="stars__item stars__item--blue"></div>
-                          <div class="stars__item stars__item--blue"></div>
-                          <div class="stars__item stars__item--blue"></div>
-                          <div class="stars__item stars__item--blue"></div>
-                          <div class="stars__item stars__item--blue"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- ./reviews -->
-
-          <hr class="divider">
-
-          <div class="calculate-cost">
-            <h3 class="title-h3">Спасибо за внимание:)</h3>
-            <div class="calculate-cost__subhead">Если вам понравилось, рассчитайте стоимость вашего ремонта прямо сейчас!</div>
-            <div class="row">
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="calculate-cost__item calculate-cost__item--online d-flex align-items-center justify-content-around">
-                  <div class="calculate-cost__text">Он-лайн калькулятор</div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="calculate-cost__item calculate-cost__item--project d-flex align-items-center justify-content-around">
-                  <div class="calculate-cost__text">Расчет по проекту</div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="calculate-cost__item calculate-cost__item--call d-flex align-items-center justify-content-around">
-                  <div class="calculate-cost__text">Вызвать замерщика</div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="calculate-cost__item calculate-cost__item--consultation d-flex align-items-center justify-content-around">
-                  <div class="calculate-cost__text">Консультация специалиста</div>
+            <div class="col-sm-6 col-xs-12 d-flex">
+              <div class="main-directions__item main-directions__item--4 position-relative">
+                <img src="images/main_direction_4.png" alt="engineering communication">
+                <div class="main-directions__descr position-absolute">
+                  <div class="main-directions__title">Инженерные коммуникации</div>
+                  <div class="main-directions__info">Ремонт любых объектов с гарантией от профессионалов!</div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- ./calculate-cost -->
+        </section>
+        <!-- ./main-directions -->
 
-          <div class="d-flex align-items-center justify-content-between">
-            <div class="title-h4">Мы ответим на все ваши вопросы. Звоните - 8 (343) 204-23-44</div>
-            <button class="btn btn-primary">Заказать звонок</button>
+        <section class="completed-projects">
+          <div class="complete-projects-title">
+            <h2 class="title-h2">Выполненные проекты</h2>
+            <div>
+              <div>Делаем все чтобы наши клиенты оставались довольны результатом и рекомендовали нас своим друзьям и знакомым! Присоеденяйтесь и вы.</div>
+              <div class="font-weight-bold">Остальные проекты смотрите в разделе <a href="#">выполненные работы!</a></div>
+            </div>
           </div>
-          <!-- ./call-back -->
+          <div class="project-card">
+            <div class="project-card__photo">
+              <img src="./images/project-photo.png" alt="projects photo" class="mx-auto">
+            </div>
+            <div class="project-card__descr">
+              <div class="project-card__title">Ремонт кухни под ключ 10 м.кв </div>
+              <div class="project-card__rating">
+                <div class="stars d-flex">
+                  <div class="stars__item stars__item--blue"></div>
+                  <div class="stars__item stars__item--blue"></div>
+                  <div class="stars__item stars__item--blue"></div>
+                  <div class="stars__item stars__item--blue"></div>
+                  <div class="stars__item stars__item--blue"></div>
+                </div>
+              </div>
+              <div class="project-card__property">
+                <span>Площадь:</span><span>8 м.кв</span>
+              </div>
+              <div class="project-card__property">
+                <span>Срок выполнения:</span><span>10 дней</span>
+              </div>
+              <div class="project-card__property">
+                <span>Полотно MonLange M7001 (5.40)</span><span>8 м.кв</span>
+              </div>
+              <div class="project-card__property">
+                <span>Профиль стеновой невидимый</span><span>10 дней</span>
+              </div>
+              <div class="project-card__property">
+                <span>Лента маскировочная универсальная белая</span><span>8 м.кв</span>
+              </div>
+              <div class="project-card__property">
+                <span>Обработка угла</span><span>10 дней</span>
+              </div>
+              <div class="project-card__property project-estimate">
+                <div class="d-flex align-items-center">
+                  <div class="project-estimate__icon mr-2"></div>
+                  <a class="project-estimate__link" href="#">Смета проекта</a>
+                </div>
+                <div class="project-estimate__price">257 920 руб.</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__photo">
+              <img src="./images/project-photo.png" alt="projects photo" class="mx-auto">
+            </div>
+            <div class="project-card__descr">
+              <div class="project-card__title">Ремонт кухни под ключ 10 м.кв </div>
+              <div class="project-card__rating">
+                <div class="stars d-flex">
+                  <div class="stars__item stars__item--blue"></div>
+                  <div class="stars__item stars__item--blue"></div>
+                  <div class="stars__item stars__item--blue"></div>
+                  <div class="stars__item stars__item--blue"></div>
+                  <div class="stars__item stars__item--blue"></div>
+                </div>
+              </div>
+              <div class="project-card__property">
+                <span>Площадь:</span><span>8 м.кв</span>
+              </div>
+              <div class="project-card__property">
+                <span>Срок выполнения:</span><span>10 дней</span>
+              </div>
+              <div class="project-card__property">
+                <span>Полотно MonLange M7001 (5.40)</span><span>8 м.кв</span>
+              </div>
+              <div class="project-card__property">
+                <span>Профиль стеновой невидимый</span><span>10 дней</span>
+              </div>
+              <div class="project-card__property">
+                <span>Лента маскировочная универсальная белая</span><span>8 м.кв</span>
+              </div>
+              <div class="project-card__property">
+                <span>Обработка угла</span><span>10 дней</span>
+              </div>
+              <div class="project-card__property project-estimate">
+                <div class="d-flex align-items-center">
+                  <div class="project-estimate__icon mr-2"></div>
+                  <a class="project-estimate__link" href="#">Смета проекта</a>
+                </div>
+                <div class="project-estimate__price">257 920 руб.</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__photo">
+              <img src="./images/project-photo.png" alt="projects photo" class="mx-auto">
+            </div>
+            <div class="project-card__descr">
+              <div class="project-card__title">Ремонт кухни под ключ 10 м.кв </div>
+              <div class="project-card__rating">
+                <div class="stars d-flex">
+                  <div class="stars__item stars__item--blue"></div>
+                  <div class="stars__item stars__item--blue"></div>
+                  <div class="stars__item stars__item--blue"></div>
+                  <div class="stars__item stars__item--blue"></div>
+                  <div class="stars__item stars__item--blue"></div>
+                </div>
+              </div>
+              <div class="project-card__property">
+                <span>Площадь:</span><span>8 м.кв</span>
+              </div>
+              <div class="project-card__property">
+                <span>Срок выполнения:</span><span>10 дней</span>
+              </div>
+              <div class="project-card__property">
+                <span>Полотно MonLange M7001 (5.40)</span><span>8 м.кв</span>
+              </div>
+              <div class="project-card__property">
+                <span>Профиль стеновой невидимый</span><span>10 дней</span>
+              </div>
+              <div class="project-card__property">
+                <span>Лента маскировочная универсальная белая</span><span>8 м.кв</span>
+              </div>
+              <div class="project-card__property">
+                <span>Обработка угла</span><span>10 дней</span>
+              </div>
+              <div class="project-card__property project-estimate">
+                <div class="d-flex align-items-center">
+                  <div class="project-estimate__icon mr-2"></div>
+                  <a class="project-estimate__link" href="#">Смета проекта</a>
+                </div>
+                <div class="project-estimate__price">257 920 руб.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ./completed-projects -->
 
-        </main>
-        <!-- ./main -->
-      </div>
+        <section class="seo-text">
+          <h3 class="title-h3">Сео текст <span>(блок текст)</span></h3>
+          <div class="seo-text__title">Кроме того, перед проведением ремонта санузла проводится серьезная подготовительная работа:</div>
+          <p>Составление сметы – это чрезвычайно важный этап.</p>
+          <p>Стоимость ремонта ванной определяется достаточно точно и редко пересматривается – это одно из наших основных преимуществ.</p>
+          <p>Исходя из Вашего бюджета и пожеланий, мы подберем для Вас соответствующий комплекс услуг.</p>
+          <p>Притом мы предлагаем Вам как ремонт эконом-класса, так и ремонт ванной комнаты среднего ценового диапазона и VIP-ремонт. Кстати, цена ремонта ванной – это не единственное преимущество «Ленремонта». Во-первых, у нас работают первоклассные мастера, каждый из которых отбирался лично директором «Ленремонта».</p>
+        </section>
+        <!-- ./seo-text -->
+
+        <section class="reviews">
+          <div class="reviews__descr">
+            <h3 class="title-h3">Отзывы наших клиентов</h3>
+            <div>
+              <p class="mb-0">Полностью готовая ванная комната по завершению всех ремонтных работ, включая все мелочи. Хозяину остается только войти в ванную комнату и повернуть кран.</p>
+            </div>
+            <div class="font-weight-bold">Больше видео отзывов Вы можете <a href="#">увидить здесь.</a></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-xs-12 d-flex">
+              <div class="reviews__item">
+                <div class="reviews__video">
+                  <iframe width="100%" src="https://www.youtube.com/embed/OfZarklsK8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="reviews__content">
+                  <div class="font-weight-bold">
+                    <p>Отзыв о ремонте 3-х комн. квартиры</p>
+                  </div>
+                  <div class="d-flex">
+                    <p class="reviews__name">Тоня</p>
+                    <div class="stars d-flex">
+                      <div class="stars__item stars__item--blue"></div>
+                      <div class="stars__item stars__item--blue"></div>
+                      <div class="stars__item stars__item--blue"></div>
+                      <div class="stars__item stars__item--blue"></div>
+                      <div class="stars__item stars__item--blue"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 d-flex">
+              <div class="reviews__item">
+                <div class="reviews__video">
+                  <iframe width="100%" src="https://www.youtube.com/embed/OfZarklsK8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="reviews__content">
+                  <div class="font-weight-bold">
+                    <p>Ремонт небольшой ванной комнаты</p>
+                  </div>
+                  <div class="d-flex">
+                    <p class="reviews__name">Мария</p>
+                    <div class="stars d-flex">
+                      <div class="stars__item stars__item--blue"></div>
+                      <div class="stars__item stars__item--blue"></div>
+                      <div class="stars__item stars__item--blue"></div>
+                      <div class="stars__item stars__item--blue"></div>
+                      <div class="stars__item stars__item--blue"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 d-flex">
+              <div class="reviews__item">
+                <div class="reviews__video">
+                  <iframe width="100%" src="https://www.youtube.com/embed/OfZarklsK8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="reviews__content">
+                  <div class="font-weight-bold">
+                    <p>Спасибо за ремнот!</p>
+                  </div>
+                  <div class="d-flex">
+                    <p class="reviews__name">Вталий Воронов</p>
+                    <div class="stars d-flex">
+                        <div class="stars__item stars__item--blue"></div>
+                        <div class="stars__item stars__item--blue"></div>
+                        <div class="stars__item stars__item--blue"></div>
+                        <div class="stars__item stars__item--blue"></div>
+                        <div class="stars__item stars__item--blue"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ./reviews -->
+
+        <hr class="divider">
+
+        <div class="calculate-cost">
+          <h3 class="title-h3">Спасибо за внимание:)</h3>
+          <div class="calculate-cost__subhead">Если вам понравилось, рассчитайте стоимость вашего ремонта прямо сейчас!</div>
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+              <div class="calculate-cost__item calculate-cost__item--online d-flex align-items-center justify-content-around">
+                <div class="calculate-cost__text">Он-лайн калькулятор</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+              <div class="calculate-cost__item calculate-cost__item--project d-flex align-items-center justify-content-around">
+                <div class="calculate-cost__text">Расчет по проекту</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+              <div class="calculate-cost__item calculate-cost__item--call d-flex align-items-center justify-content-around">
+                <div class="calculate-cost__text">Вызвать замерщика</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+              <div class="calculate-cost__item calculate-cost__item--consultation d-flex align-items-center justify-content-around">
+                <div class="calculate-cost__text">Консультация специалиста</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./calculate-cost -->
+
+        <div class="bottom-call-back">
+          <div class="title-h4 mr-3">Мы ответим на все ваши вопросы. <span>Звоните - 8 (343) 204-23-44</span></div>
+          <button class="btn btn-primary">Заказать звонок</button>
+        </div>
+        <!-- ./call-back -->
+
+      </main>
+      <!-- ./main -->
     </div>
   </div>
 
@@ -472,7 +516,7 @@
     <div class="container">
       <nav>
         <ul class="footer-nav d-flex align-items-center justify-content-between">
-          <li class="footer-nav__item"><a class="footer-nav__link cost_1 " href="#">Акции</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link stock" href="#">Акции</a></li>
           <li class="footer-nav__item"><a class="footer-nav__link" href="#">Расчеты стоимости</a></li>
           <li class="footer-nav__item"><a class="footer-nav__link" href="#">Примеры работ</a></li>
           <li class="footer-nav__item"><a class="footer-nav__link" href="#">Цены</a></li>
@@ -483,37 +527,50 @@
       </nav>
       <!-- ./footer-nav-->
 
-      <div class="footer-contact row align-items-center justify-content-between">
-        <div class="col-lg-3 col-md-6 col-xs-12">
-          <img src="" alt="footer logo">
+      <div class="footer-contact row">
+        <div class="footer-contact__col hide-991">
+          <img src="./images/logo-footer.png" alt="logo footer" class="footer-logo">
           <div>© ВираТек - ремонт квартир,домов,<br>
             коммерческоей недвижимости, 2019 год.</div>
         </div>
 
-        <div class="col-lg-3 col-md-6 col-xs-12">
-          <div>
-            <div>Ежедневно с 09:00 до 20:00</div>
-            <div>+7 (343) 200-00-92</div>
+        <div class="footer-contact__col">
+          <div class="mb-3">
+            <div class="footer-contact__title">Ежедневно с 09:00 до 20:00</div>
+            <div class="footer-contact__info footer-contact__info--lg">+7 (343) 200-00-92</div>
           </div>
           <div>
-            <div>Эл.почта:</div>
-            <div>Info@viratek.ru</div>
+            <div class="footer-contact__title">Эл.почта:</div>
+            <div class="footer-contact__info">Info@viratek.ru</div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 col-xs-12">
-          <div>
-            <div>WhatsApp</div>
-            <div>+7 (343) 200-00-92</div>
+        <div class="footer-contact__col">
+          <div class="mb-3">
+            <div class="footer-contact__title">WhatsApp</div>
+            <div class="footer-contact__info footer-contact__info--lg">+7 (343) 200-00-92</div>
           </div>
-          <div>г. Екатеринбург,</div>
-          <div>ул. Малышева 60, оф 209</div>
+          <div class="footer-contact__title">г. Екатеринбург,</div>
+          <div class="footer-contact__info">ул. Малышева 60, оф 209</div>
         </div>
 
-
-        <div class="footer-review col-lg-3 col-md-12">
-          <div>stars Оставить отзыв</div>
-          <div>Мы в соц.сетях: social-icons</div>
+        <div class="footer-contact__col">
+          <div class="footer-review d-flex align-items-center">
+            <div class="stars d-flex mr-2">
+              <div class="stars__item stars__item--light"></div>
+              <div class="stars__item stars__item--light"></div>
+              <div class="stars__item stars__item--light"></div>
+              <div class="stars__item stars__item--light"></div>
+              <div class="stars__item stars__item--light"></div>
+            </div>
+            <span>Оставить отзыв</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <span class="mr-2">Мы в соц.сетях: </span>
+            <span class="social-icon social-icon__inst"></span>
+            <span class="social-icon social-icon__youtube"></span>
+            <span class="social-icon social-icon__vk"></span>
+          </div>
         </div>
       </div>
       <!-- ./footer-contacts-->

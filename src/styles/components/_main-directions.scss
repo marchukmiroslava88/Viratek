@@ -31,9 +31,9 @@
 
   &__title {
     font-size: $fz-lg;
+    line-height: 30px;
+    margin-bottom: 5px;
     font-weight: bold;
-    white-space: nowrap;
-    display: flex;
     align-items: center;
     cursor: pointer;
 
@@ -41,6 +41,7 @@
       content: "";
       width: 7px;
       height: 11px;
+      display: inline-block;
       margin-left: 20px;
       margin-top: 5px;
       background: url("../../images/icons/sprite.png") -613px -517px;

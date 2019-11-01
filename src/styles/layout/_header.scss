@@ -2,22 +2,15 @@
   background-color: #e5f5fd;
 
   &-nav {
-    margin-left: 25%;
-
-    &__item {
-      padding: 0 35px;
-      white-space: nowrap;
-
-      &:first-child {
-        padding-left: 8px;
-      }
-    }
+    margin-left: 320px;
+    justify-content: space-between;
 
     &__link {
       color: $primary-color;
       font-size: $fz-sm;
       font-weight: bold;
-      display: inline-block;
+      display: flex;
+      align-items: center;
       padding: 14px 0;
       position: relative;
 
@@ -45,4 +38,12 @@
 
     }
   }
+}
+
+.header-nav__link.stock:before{
+  content: "";
+  width: 26px;
+  height: 26px;
+  margin-right: 12px;
+  background: url("../../images/icons/sprite.png") -613px -58px;
 }

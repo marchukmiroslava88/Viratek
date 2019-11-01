@@ -2,7 +2,8 @@
 @import "../utils/_vars";
 
 .calculate-cost {
-  margin-bottom: 55px;
+  margin-bottom: 35px;
+
   a {
     &:hover {
       text-decoration: none;
@@ -26,6 +27,8 @@
     background-color: $aqua-color;
     color: $primary-color;
     padding: 20px;
+    margin-bottom: 20px;
+
     &:before {
       width: 35%;
     }

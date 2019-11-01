@@ -9,13 +9,13 @@
   margin-bottom: 40px;
 
   &__photo {
-    width: 60%;
+    width: calc(100% - 400px);;
     overflow: hidden;
   }
 
   &__descr {
     padding: 0 40px;
-    width: 40%;
+    width: 400px;
   }
 
   &__title {
