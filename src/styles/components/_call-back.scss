@@ -24,7 +24,9 @@
     font-size: $fz-md;
     color: $dark;
   }
-
+  .btn {
+    min-width: auto;
+  }
   &__contact a {
     color: $primary-color;
     font-size: $fz-md;
