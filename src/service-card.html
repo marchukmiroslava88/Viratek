@@ -72,13 +72,15 @@
       </aside>
       <!-- ./aside -->
 
-
       <main class="main-content">
         <div class="contact-us">
           <h1 class="show-1200 hide-991">
             <img src="./images/logo-tab.png" alt="logo">
           </h1>
-          <div class="contact-us__text">Ремонт ванной комнаты в Екатеринбурге: <span>Звоните! — 8 (343) 903-44-33</span></div>
+          <div class="contact-us__text hide-575">Ремонт ванной комнаты в Екатеринбурге: <span>Звоните! — 8 (343) 903-44-33</span></div>
+          <div class="contact-us__text-mob">
+            <span>г. Екатеринбург </span>
+            <span>8 (343) 903-44-33</span></div>
           <button class="btn btn-primary hide-991">Заказать звонок</button>
         </div>
 
@@ -95,57 +97,67 @@
             </li>
             <li class="tab-nav__item">
               <a class="tab-nav__link active" href="#">Отделочные работы</a>
-              <ul class="tab-sub-nav">
-                <span class="font-weight-bold">Ремонт пола</span>
-                <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
-                <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
-                <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
-                <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
-                <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
-              </ul>
-              <ul class="tab-sub-nav">
-                <span class="font-weight-bold">Ремонт стен</span>
-                <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Штукатурка стен</a></li>
-                <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Поклейка обоев</a></li>
-              </ul>
             </li>
           </ul>
+          <div class="tab-sub-nav open">
+            <ul>
+              <span class="font-weight-bold">Ремонт пола</span>
+              <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
+              <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
+              <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
+              <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
+              <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
+            </ul>
+            <ul>
+              <span class="font-weight-bold">Ремонт стен</span>
+              <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Штукатурка стен</a></li>
+              <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Поклейка обоев</a></li>
+            </ul>
+          </div>
         </nav>
         <!-- ./tab-nav -->
 
         <div class="show-991">
           <nav class="mob-nav row justify-content-between align-items-center">
-            <img src="./images/logo-footer.png" alt="">
+            <img class="mob-nav__logo ml-3" src="./images/logo-footer.png" alt="">
             <div class="d-flex align-items-center">
-              <img src="" alt="ph">
-              <button>menu</button>
-              <ul style="position: absolute; display: none">
-                <li class="mob-nav__item">
-                  <a class="mob-nav__link" href="#">Ремонт под ключ</a>
-                </li>
-                <li class="mob-nav__item">
-                  <a class="mob-nav__link" href="#">Ремонт под ключ</a>
-                </li>
-                <li class="mob-nav__item">
-                  <a class="mob-nav__link" href="#">Ремонт под ключ</a>
-                </li>
-                <li class="mob-nav__item">
-                  <a class="mob-nav__link active" href="#">Отделочные работы</a>
-                  <ul class="mob-sub-nav">
-                    <span class="font-weight-bold">Ремонт пола</span>
-                    <li class="mob-sub-nav__item"><a href="#" class="mob-sub-nav__link">Укладка ламината</a></li>
-                    <li class="mob-sub-nav__item"><a href="#" class="mob-sub-nav__link">Укладка ламината</a></li>
-                    <li class="mob-sub-nav__item"><a href="#" class="mob-sub-nav__link">Укладка ламината</a></li>
-                    <li class="mob-sub-nav__item"><a href="#" class="mob-sub-nav__link">Укладка ламината</a></li>
-                    <li class="mob-sub-nav__item"><a href="#" class="mob-sub-nav__link">Укладка ламината</a></li>
-                  </ul>
-                  <ul class="mob-sub-nav">
-                    <span class="font-weight-bold">Ремонт стен</span>
-                    <li class="mob-sub-nav__item"><a href="#" class="mob-sub-nav__link">Штукатурка стен</a></li>
-                    <li class="mob-sub-nav__item"><a href="#" class="mob-sub-nav__link">Поклейка обоев</a></li>
-                  </ul>
-                </li>
-              </ul>
+              <span class="mob-nav__phone"></span>
+              <div class="d-flex align-items-center" style="padding: 17px 22px;">
+                <span class="mob-nav__open-menu">Меню</span>
+                <div id="nav-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <span class="mob-nav__bars"></span>
+              </div>
+              <div class="mob-nav__menu">
+                <ul class="mb-0">
+                  <li class="mob-nav__item">
+                    <a class="mob-nav__link" href="#">Ремонт под ключ</a>
+                  </li>
+                  <li class="mob-nav__item">
+                    <a class="mob-nav__link" href="#">Ремонт под ключ</a>
+                  </li>
+                  <li class="mob-nav__item">
+                    <a class="mob-nav__link" href="#">Ремонт под ключ</a>
+                  </li>
+                  <li class="mob-nav__item">
+                    <a class="mob-nav__link active" href="#">Отделочные работы</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="mob-nav-page__item">
+                    <a class="mob-nav-page__link stock" href="#">Акции</a>
+                  </li>
+                  <li class="mob-nav-page__item">
+                    <a class="mob-nav-page__link" href="#">Расчеты стоимости</a>
+                  </li>
+                  <li class="mob-nav-page__item">
+                    <a class="mob-nav-page__link" href="#">Примеры работ</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </nav>
         </div>
@@ -773,7 +785,7 @@
   <footer class="footer">
     <div class="container">
       <nav>
-        <ul class="footer-nav d-flex align-items-center justify-content-between">
+        <ul class="footer-nav d-flex align-items-center">
           <li class="footer-nav__item"><a class="footer-nav__link stock" href="#">Акции</a></li>
           <li class="footer-nav__item"><a class="footer-nav__link" href="#">Расчеты стоимости</a></li>
           <li class="footer-nav__item"><a class="footer-nav__link" href="#">Примеры работ</a></li>

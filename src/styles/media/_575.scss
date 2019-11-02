@@ -1,0 +1,168 @@
+@media (max-width: 575px) {
+  .popular-services__item {
+    flex: 0 0 100%;
+    border: none;
+    margin: 0;
+    border-bottom: 1px solid #e4e9f3;
+
+    &:first-child {
+      border-top: 1px solid #e4e9f3;
+    }
+  }
+  .footer-contact__col {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-contact__col:last-child {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-review {
+    margin-bottom: 25px;
+  }
+  .footer-info {
+    text-align: center;
+  }
+  .footer-nav__item {
+    width: 100%;
+  }
+  .footer-nav__link {
+    justify-content: center;
+  }
+  .footer-nav__item:last-child {
+    margin-right: 0;
+  }
+  .footer-nav__item:first-child {
+    margin-left: 0;
+  }
+  .mob-nav__open-menu {
+    display: none;
+  }
+  .title-h2 {
+    font-size: 24px;
+  }
+  .main-slider {
+    margin-bottom: 0;
+  }
+  .popular-services {
+    margin-bottom: 0;
+  }
+  .main-directions__item {
+    border: none;
+    margin: 0;
+    border-bottom: 1px solid #e4e9f3;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+
+    &:before {
+      width: 35%;
+      margin: auto;
+    }
+    &--1:before{
+      content: "";
+      max-width: 70px;
+      height: 70px;
+      background: url("../../images/icons/sprite.png") -280px -260px;
+    }
+    &--2:before{
+      content: "";
+      max-width: 70px;
+      height: 70px;
+      background: url("../../images/icons/sprite.png") -70px -420px;
+    }
+    &--3:before{
+      content: "";
+      max-width: 70px;
+      height: 70px;
+      background: url("../../images/icons/sprite.png") -465px -260px;
+    }
+    &--4:before{
+      content: "";
+      max-width: 70px;
+      height: 70px;
+      background: url("../../images/icons/sprite.png") -465px -90px;
+    }
+  }
+  .main-directions__title {
+    font-size: 18px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+  }
+  .main-directions__descr {
+    width: 65%;
+    padding: 0;
+  }
+  .main-directions-mob {
+    margin-bottom: 40px;
+  }
+  .complete-projects-title {
+    font-size: 15px;
+  }
+  .complete-projects-descr {
+    color: #676767;
+  }
+  .project-card__photo img{
+    width: 100%;
+  }
+  .contact-us__text-mob {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .contact-us__text-mob span:first-child {
+    font-size: 14px;
+    font-weight: normal;
+    color: #676767;
+  }
+  .contact-us__text-mob span:last-child {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+  }
+  .project-card__rating {
+    width: 100%;
+  }
+  .title-h3 {
+    font-size: 24px;
+  }
+  .calculate-cost__subhead {
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  .title-h4 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .calculate-cost {
+    margin-bottom: 0;
+  }
+  .bottom-call-back {
+    margin-bottom: 45px;
+  }
+  .project-card__property {
+    width: 100%;
+    font-size: 15px;
+    justify-content: normal;
+  }
+  .project-card .project-estimate__price {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .project-card {
+    margin-bottom: 25px;
+  }
+  .hide-575 {
+    display: none;
+  }
+  .show-575 {
+    display: block;
+  }
+  .main-slider .slick-dots {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}

@@ -1,12 +1,6 @@
 .tab-nav {
-  position: absolute;
-  z-index: 1;
-  background: #fff;
-  left: 0;
-  right: 0;
-  -webkit-box-shadow: 0px 10px 12px 0px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 10px 12px 0px rgba(0,0,0,0.2);
-  box-shadow: 0px 10px 12px 0px rgba(0,0,0,0.2);
+  margin-right: -15px;
+  margin-left: -15px;
 
   &__item {
     flex-basis: 25%;
@@ -35,18 +29,29 @@
       color: $primary-color;
       border-bottom: none;
     }
-
-    &.active~.tab-sub-nav {
-      display: block;
-    }
-
   }
 }
 .tab-sub-nav {
   display: none;
-  padding: 15px;
+  padding: 50px;
+  position: absolute;
+  z-index: 1;
+  background: #fff;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 0px 10px 12px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 10px 12px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 10px 12px 0px rgba(0,0,0,0.2);
 
   &__link {
     color: #656565;
+  }
+
+  &.open {
+    display: flex;
+  }
+
+  ul {
+    flex: 0 0 25%;
   }
 }

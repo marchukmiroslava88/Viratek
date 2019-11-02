@@ -17,12 +17,13 @@
     &__descr {
       width: 100%;
       margin: 25px 0 20px;
+      padding: 0 30px;
     }
     &__title {
       font-size: 18px;
       font-weight: 500;
     }
-    &__property {
+    &__property:not(.project-estimate) {
       display: none;
     }
   }
@@ -42,7 +43,7 @@
     margin-bottom: 50px;
   }
   .footer-nav {
-    padding: 0;
+    justify-content: center;
   }
   .footer-contact {
     justify-content: space-around;
@@ -62,5 +63,39 @@
   .main-slider {
     margin-right: -15px;
     margin-left: -15px;
+  }
+  .main-directions__descr {
+    padding: 10px;
+  }
+  .main-directions__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .main-directions__info {
+    font-size: 12px;
+  }
+  .title-h2 {
+    font-size: 30px;
+  }
+  .project-card__descr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project-card__title {
+    width: 100%;
+  }
+  .project-card__rating {
+    width: 35%;
+  }
+  .project-card__property {
+    width: 65%;
+    justify-content: flex-end;
+    border-top: none;
+  }
+  .project-card .project-estimate__price {
+    margin-left: 20px;
+  }
+  .project-estimate div{
+    white-space: nowrap;
   }
 }
