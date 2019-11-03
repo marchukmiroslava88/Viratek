@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Viratek</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+</head>
+<body>
+<section class="page-attach">
+  <h2 class="font-weight-bold">Расчет стоимости ремонта</h2>
+  <div class="page-attach__wrapper">
+    <div class="page-attach__content">
+      <div class="page-attach__title">Загрузка файлов на расчет</div>
+      <p>Загрузите фото, рисунок, скан-копию или документ с планировкой квартиры,
+        и мы пришлем расчет примерной стоимости ремонта Вам на e-mail.</p>
+      <form class="needs-validation w-100" novalidate action="/upload.php">
+        <div class="form-row">
+          <div id="dropZone" class="d-flex col-12 justify-content-center align-items-center flex-wrap">
+            Перетащите сюда файлы или
+            <div class="custom-file">
+            <input type="file" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Прикрепить файл</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-lg-5 col-md-4">
+            <input type="text" class="form-control" id="nameId" placeholder="Ваше имя" required="">
+          </div>
+          <div class="form-group col-lg-4 col-md-4">
+            <input type="tel" pattern=".{10}" class="form-control" id="telId" placeholder="Телефон" oninput="check(this)" required="">
+          </div>
+          <div class="form-group col-lg-3 col-md-4">
+            <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-12">
+            <textarea class="form-control" id="textareaId" rows="3" placeholder="Комментарий"></textarea>
+          </div>
+        </div>
+        <div class="form-row d-flex justify-content-between align-items-center">
+          <div class="form-check d-flex align-items-center">
+            <input type="checkbox" id="exampleCheck1" checked>
+            <label class="form-check-label" for="exampleCheck1">Согласие на обработку персональных данных клиентов</label>
+          </div>
+          <button type="submit" class="button-close">Отправить на расчет</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- ./page-attach -->
+
+<script>
+  $(document).ready(function() {
+
+    var dropZone = $('#dropZone'),
+      maxFileSize = 100000000; // максимальный размер файла
+
+    // Проверка поддержки браузером
+    if (typeof(window.FileReader) == 'undefined') {
+      dropZone.text('Не поддерживается браузером!');
+      dropZone.addClass('error');
+    }
+
+    // Добавляем класс hover при наведении
+    dropZone[0].ondragover = function() {
+      dropZone.addClass('hover');
+      return false;
+    };
+
+    // Убираем класс hover
+    dropZone[0].ondragleave = function() {
+      dropZone.removeClass('hover');
+      return false;
+    };
+
+    // Обрабатываем событие Drop
+    dropZone[0].ondrop = function(event) {
+      event.preventDefault();
+      dropZone.removeClass('hover');
+      dropZone.addClass('drop');
+
+      var file = event.dataTransfer.files[0];
+
+      // Проверяем размер файла
+      if (file.size > maxFileSize) {
+        dropZone.text('Файл слишком большой!');
+        dropZone.addClass('error');
+        return false;
+      }
+
+      // Создаем запрос
+      var xhr = new XMLHttpRequest();
+      xhr.upload.addEventListener('progress', uploadProgress, false);
+      xhr.onreadystatechange = stateChange;
+      xhr.open('POST', '/upload.php');
+      xhr.setRequestHeader('X-FILE-NAME', file.name);
+      xhr.send(file);
+    };
+
+    // Показываем процент загрузки
+    function uploadProgress(event) {
+      var percent = parseInt(event.loaded / event.total * 100);
+      dropZone.text('Загрузка: ' + percent + '%');
+    }
+
+    // Пост обрабочик
+    function stateChange(event) {
+      if (event.target.readyState == 4) {
+        if (event.target.status == 200) {
+          dropZone.text('Загрузка успешно завершена!');
+        } else {
+          dropZone.text('Произошла ошибка!');
+          dropZone.addClass('error');
+        }
+      }
+    }
+  });
+</script>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 .online-calc,
-.page-success {
+.page-success,
+.page-attach {
   max-width: 800px;
   margin: 0 auto;
   color: #999;
@@ -156,7 +157,8 @@
 .online-calc-step-3,
 .online-calc-step-4,
 .online-calc-step-5,
-.page-success {
+.page-success,
+.page-attach {
   .progress:before {
     width: 60%;
   }
@@ -216,7 +218,8 @@
   }
 }
 
-.page-success {
+.page-success,
+.page-attach {
   margin-bottom: 55px;
   h2 {
     margin-bottom: 50px;
@@ -271,5 +274,122 @@
       text-decoration: none;
       background-color: #0069d9;
     }
+  }
+}
+
+.page-attach {
+  &__title {
+    margin-top: 55px;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+  }
+
+  form {
+    margin-bottom: 65px;
+  }
+
+  .button-close {
+    float: right;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 10px 25px;
+  }
+
+  #dropZone {
+    color: $primary-color;
+    font-size: 18px;
+    text-align: center;
+    padding: 50px 0;
+    margin: 50px auto;
+    background: $aqua-color;
+    border: 1px solid $aqua-color;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    &.hover {
+      background: #ddd;
+      border-color: #aaa;
+    }
+    &.error {
+      background: #faa;
+      border-color: #f00;
+    }
+    .drop {
+      background: #afa;
+      border-color: #0f0;
+    }
+  }
+
+  .custom-file {
+    width: 100%;
+    max-width: 205px;
+  }
+
+  .custom-file-label {
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    background: $aqua-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: $fz-sm;
+
+    &:after {
+      display: none;
+    }
+    &:before {
+      content: "";
+      width: 19px;
+      height: 21px;
+      background: url("../../images/icons/sprite.png") -613px -399px;
+    }
+  }
+
+  .form-check {
+    margin-left: 5px;
+    padding-left: 0;
+  }
+
+  input[type="checkbox"] {
+    display: flex;
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+
+    &:before {
+      content: "";
+      background-image: url("../../images/icons/icon_no-checked.png");
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  input[type="checkbox"]:checked {
+    display: flex;
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+
+    &:before {
+      content: "";
+      background-image: url("../../images/icons/icon_checked.png");
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  .form-check-label {
+    font-size: 13px;
   }
 }
