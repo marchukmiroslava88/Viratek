@@ -122,3 +122,14 @@ hr.divider {
 .pagination {
   margin-top: 40px;
 }
+.review-tab {
+  .nav-link {
+    font-size: 15px;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+  }
+  .nav-link.active {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
