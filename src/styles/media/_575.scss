@@ -60,25 +60,25 @@
       width: 35%;
       margin: auto;
     }
-    &--1:before{
+    &--1:before {
       content: "";
       max-width: 70px;
       height: 70px;
       background: url("../../images/icons/sprite.png") -280px -260px;
     }
-    &--2:before{
+    &--2:before {
       content: "";
       max-width: 70px;
       height: 70px;
       background: url("../../images/icons/sprite.png") -70px -420px;
     }
-    &--3:before{
+    &--3:before {
       content: "";
       max-width: 70px;
       height: 70px;
       background: url("../../images/icons/sprite.png") -465px -260px;
     }
-    &--4:before{
+    &--4:before {
       content: "";
       max-width: 70px;
       height: 70px;
@@ -105,7 +105,7 @@
   .complete-projects-descr {
     color: #676767;
   }
-  .project-card__photo img{
+  .project-card__photo img {
     width: 100%;
   }
   .contact-us__text-mob {

@@ -1,11 +1,10 @@
-@import "../utils/_mixins";
-@import "../utils/_vars";
-
 .costing-examples {
   &__descr {
     margin-bottom: 40px;
   }
   &__item {
+    border: 1px solid #e4e9f3;
+
     &__link {
       display: flex;
       font-size: 15px;

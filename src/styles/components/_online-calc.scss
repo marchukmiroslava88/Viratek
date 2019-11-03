@@ -1,6 +1,3 @@
-@import "../utils/_mixins";
-@import "../utils/_vars";
-
 .online-calc,
 .page-success {
   max-width: 800px;
@@ -32,6 +29,7 @@
     color: $text-light;
     align-items: center;
     margin-bottom: 65px;
+    transition: background-color 0.3s;
 
     &:after {
       content: "";
@@ -42,7 +40,7 @@
     }
     &:hover {
       text-decoration: none;
-      @include hover(background-color, #ffba00 * 0.9);
+      background-color:  #ffba00 * 0.9;
     }
   }
 }
@@ -79,13 +77,14 @@
     cursor: pointer;
     color: $primary-color;
     font-size: $fz-md;
+    transition: background-color 0.3s;
 
     &:last-child {
       margin-right: 0;
     }
 
     &:hover {
-      @include hover(background-color, $primary-color);
+      background-color: $primary-color;
       color: $text-light;
     }
   }
@@ -266,10 +265,11 @@
     display: inline-block;
     margin-top: 40px;
     margin-bottom: 80px;
+    transition: background-color 0.3s;
 
     &:hover {
       text-decoration: none;
-      @include hover(background-color, #0069d9);
+      background-color: #0069d9;
     }
   }
 }

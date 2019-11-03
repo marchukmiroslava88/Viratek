@@ -1,6 +1,3 @@
-@import "../utils/_mixins";
-@import "../utils/_vars";
-
 .project-card {
   display: flex;
   align-items: center;
@@ -9,7 +6,7 @@
   margin-bottom: 40px;
 
   &__photo {
-    width: calc(100% - 400px);;
+    width: calc(100% - 400px);
     overflow: hidden;
   }
 
@@ -44,7 +41,7 @@
 
   .project-estimate {
 
-    &__link  {
+    &__link {
       border-bottom: 1px dashed;
       line-height: 21px;
 

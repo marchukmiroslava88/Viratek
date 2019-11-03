@@ -1,8 +1,8 @@
-@import "../utils/_mixins";
-@import "../utils/_vars";
-
 .calculate-project {
   &__descr {
+    a {
+      line-height: 18px;
+    }
     &__item {
       &--1 {
         a {
@@ -67,6 +67,8 @@
       font-weight: bold;
     }
     &__link {
+      transition: background-color 0.3s;
+
       &:before {
         content: "";
         width: 20px;
@@ -74,8 +76,9 @@
         background: url("../../images/icons/sprite.png") -613px -236px;
         margin-right: 10px;
       }
+
       &:hover {
-        @include hover(background-color, #0069d9);
+        background-color: #0069d9;
         color: $text-light;
       }
       margin-left: 40px;
