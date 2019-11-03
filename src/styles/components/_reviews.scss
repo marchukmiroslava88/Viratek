@@ -1,19 +1,13 @@
-@import "../utils/_vars";
-
 .reviews {
   margin-top: 45px;
   .title-h3 {
     margin-bottom: 10px;
   }
 
-  &__descr {
-    margin-bottom: 35px;
-  }
-
   &__item {
     border: 1px solid $br-color;
     width: 100%;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   &__content {

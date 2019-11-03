@@ -12,6 +12,8 @@
     padding-bottom: 40px;
   }
   &__item {
+    margin-bottom: 20px;
+
     &:before {
       width: 35%;
       margin-right: 15px;
@@ -19,7 +21,8 @@
     &--1 {
       &:before {
         content: "";
-        max-width: 40px;
+        min-width: 40px;
+        width: 40px;
         height: 47px;
         background: url("../../images/icons/sprite.png") -553px -10px;
       }
@@ -27,7 +30,8 @@
     &--2 {
       &:before {
         content: "";
-        max-width: 35px;
+        min-width: 35px;
+        width: 35px;
         height: 42px;
         background: url("../../images/icons/sprite.png") -553px -145px;
       }
@@ -35,20 +39,15 @@
     &--3 {
       &:before {
         content: "";
-        max-width: 42px;
+        min-width: 42px;
+        width: 42px;
         height: 43px;
         background: url("../../images/icons/sprite.png") -10px -507px;
       }
     }
   }
-  &__text {
-    p {
-      margin-bottom: 0;
-    }
-  }
   &__contact {
     margin-top: 45px;
-    margin-bottom: 20px;
   }
 
   &__contacts {
