@@ -2,10 +2,12 @@
   margin-top: 60px;
 
   &__item {
-    width: 10%;
+    width: 90px;
     margin: 0 auto;
+
     &__content {
-      width: 90%;
+      width: calc(100% - 90px);
+
       &__subhead {
         font-size: 18px;
         font-weight: bold;

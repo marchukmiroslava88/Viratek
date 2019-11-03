@@ -12,7 +12,7 @@
         }
         &:before {
           content: "";
-          width: 36px;
+          min-width: 36px;
           height: 36px;
           background: url("../../images/icons/sprite.png") -553px -375px;
           margin-right: 10px;
@@ -27,7 +27,7 @@
         }
         &:before {
           content: "";
-          width: 36px;
+          min-width: 36px;
           height: 36px;
           background: url("../../images/icons/sprite.png") -553px -431px;
           margin-right: 10px;
@@ -42,7 +42,7 @@
         }
         &:before {
           content: "";
-          width: 36px;
+          min-width: 36px;
           height: 36px;
           background: url("../../images/icons/sprite.png") -224px -79px;
           margin-right: 10px;

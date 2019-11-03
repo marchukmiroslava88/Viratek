@@ -1,11 +1,17 @@
 .repair-style {
   &__title {
-    font-size: $lh-md;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 15px;
+    line-height: 28px;
   }
+
+  &__item {
+    border: 1px solid $br-color;
+    margin-bottom: 30px;
+  }
+
   &__content {
     padding: 35px;
-    border: 1px solid $br-color;
   }
 }

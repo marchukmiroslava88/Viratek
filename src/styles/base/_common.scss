@@ -10,7 +10,7 @@
 
 .title-h4 {
   font-weight: bold;
-  font-size: $lh-md;
+  font-size: 24px;
 }
 
 p {
@@ -26,7 +26,9 @@ hr.divider {
 .breadcrumbs {
   margin-top: 50px;
 }
-
+.breadcrumbs span:not(:first-child):before{
+ content: " / ";
+}
 .bottom-call-back {
   display: flex;
   align-items: center;
