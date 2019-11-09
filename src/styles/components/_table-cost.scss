@@ -7,6 +7,11 @@
     margin-bottom: 15px;
   }
 
+  h3 {
+    font-size: $fz-lg;
+    font-weight: bold;
+  }
+
   .thead-light {
     th {
       background-color: $aqua-color;
@@ -28,5 +33,23 @@
   .table-bordered td {
     border: 1px solid $br-color;
     padding: 13px 25px;
+  }
+
+  .table-col-2 {
+    td {
+
+      &:nth-child(2) {
+        font-weight: bold;
+        width: 15%;
+      }
+    }
+
+    tfoot {
+      font-weight: bold;
+
+      span {
+        font-size: $lh-md;
+      }
+    }
   }
 }

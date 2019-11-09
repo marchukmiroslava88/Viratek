@@ -6,7 +6,26 @@
     margin-bottom: 35px;
   }
 
+  h3 {
+    font-size: $fz-lg;
+    font-weight: bold;
+  }
+
   p {
     margin-bottom: 25px;
+  }
+
+  .id-service {
+    font-size: $fz-xs;
+    color: #9a9a9a;
+  }
+
+  .col-md {
+    border-right: 1px solid $br-color;
+    text-align: center;
+
+    &:first-child {
+      text-align: left;
+    }
   }
 }

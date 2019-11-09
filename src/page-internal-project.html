@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Viratek</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+<header class="header hide-991">
+  <div class="container">
+    <nav>
+      <ul class="header-nav d-flex align-items-center mb-0">
+        <li class="header-nav__item"><a class="header-nav__link" href="#">О компании</a></li>
+        <li class="header-nav__item"><a class="header-nav__link" href="#">Цены</a></li>
+        <li class="header-nav__item"><a class="header-nav__link" href="#">Расчеты стоимости</a></li>
+        <li class="header-nav__item"><a class="header-nav__link" href="#">Примеры работ</a></li>
+        <li class="header-nav__item"><a class="header-nav__link" href="#">Отзывы</a></li>
+        <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- ./header -->
+
+<div class="container">
+  <div class="d-flex">
+    <aside class="sidebar hide-1200">
+      <div class="sidebar__logo">
+        <img src="./images/logo.png" alt="logo">
+        <div class="logo-text">Группа компаний по ремонту и инженерных <br> решений для дома и офиса!</div>
+      </div>
+      <nav>
+        <ul class="sidebar-nav">
+          <li class="sidebar-nav__item">
+            <a class="sidebar-nav__link" href="#">Ремонт под ключ</a>
+          </li>
+          <li class="sidebar-nav__item">
+            <a class="sidebar-nav__link active" href="#">Отделочные работы</a>
+            <ul class="sub-nav">
+              <span class="font-weight-bold">Ремонт пола</span>
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Укладка ламината</a></li>
+            </ul>
+            <ul class="sub-nav">
+              <span class="font-weight-bold">Ремонт стен</span>
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Штукатурка стен</a></li>
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Поклейка обоев</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="call-back">
+        <div class="call-back__photo">
+          <img src="./images/manager.png" alt="manager photo">
+        </div>
+        <div class="call-back__text">
+          <div class="text-muted">Мастер консультант</div>
+          <div class="call-back__manager">Артур Бубалех</div>
+        </div>
+        <div class="call-back__contact">
+          <a href="tel:">+7(343)206-44-88</a>
+        </div>
+        <button class="btn btn-primary">Заказать звонок</button>
+      </div>
+    </aside>
+    <!-- ./aside -->
+
+    <main class="main-content">
+      <div class="contact-us">
+        <h1 class="show-1200 hide-991">
+          <img src="./images/logo-tab.png" alt="logo">
+        </h1>
+        <div class="contact-us__text hide-575">Ремонт квартир в Екатеринбурге и области:  <span>Звоните! — 8 (343) 903-44-33</span></div>
+        <div class="contact-us__text-mob">
+          <span>г. Екатеринбург </span>
+          <span>8 (343) 903-44-33</span></div>
+        <button class="btn btn-primary hide-991">Заказать звонок</button>
+      </div>
+
+      <nav class="show-1200 hide-991">
+        <ul class="tab-nav d-flex">
+          <li class="tab-nav__item">
+            <a class="tab-nav__link" href="#">Ремонт под ключ</a>
+          </li>
+          <li class="tab-nav__item">
+            <a class="tab-nav__link" href="#">Ремонт под ключ</a>
+          </li>
+          <li class="tab-nav__item">
+            <a class="tab-nav__link" href="#">Ремонт под ключ</a>
+          </li>
+          <li class="tab-nav__item">
+            <a class="tab-nav__link active" href="#">Отделочные работы</a>
+          </li>
+        </ul>
+        <div class="tab-sub-nav open">
+          <ul>
+            <span class="font-weight-bold">Ремонт пола</span>
+            <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
+            <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
+            <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
+            <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
+            <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Укладка ламината</a></li>
+          </ul>
+          <ul>
+            <span class="font-weight-bold">Ремонт стен</span>
+            <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Штукатурка стен</a></li>
+            <li class="tab-sub-nav__item"><a href="#" class="tab-sub-nav__link">Поклейка обоев</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- ./tab-nav -->
+
+      <div class="show-991">
+        <nav class="mob-nav row justify-content-between align-items-center">
+          <img class="mob-nav__logo ml-3" src="./images/logo-footer.png" alt="">
+          <div class="d-flex align-items-center">
+            <span class="mob-nav__phone"></span>
+            <div class="d-flex align-items-center" style="padding: 17px 22px;">
+              <span class="mob-nav__open-menu">Меню</span>
+              <div id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="mob-nav__bars"></span>
+            </div>
+            <div class="mob-nav__menu">
+              <ul class="mb-0">
+                <li class="mob-nav__item">
+                  <a class="mob-nav__link" href="#">Ремонт под ключ</a>
+                </li>
+                <li class="mob-nav__item">
+                  <a class="mob-nav__link" href="#">Ремонт под ключ</a>
+                </li>
+                <li class="mob-nav__item">
+                  <a class="mob-nav__link" href="#">Ремонт под ключ</a>
+                </li>
+                <li class="mob-nav__item">
+                  <a class="mob-nav__link active" href="#">Отделочные работы</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="mob-nav-page__item">
+                  <a class="mob-nav-page__link stock" href="#">Акции</a>
+                </li>
+                <li class="mob-nav-page__item">
+                  <a class="mob-nav-page__link" href="#">Расчеты стоимости</a>
+                </li>
+                <li class="mob-nav-page__item">
+                  <a class="mob-nav-page__link" href="#">Примеры работ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- ./mob-nav -->
+
+      <div class="breadcrumbs">
+        <p><span>Виратек</span><span>Примеры работ</span></p>
+      </div>
+      <!-- ./breadcrumbs -->
+
+      <section class="info-page-title-descr">
+        <h1>Ремонт квартиры под ключ в новостройке 72 м.кв <span class="id-service">ID: 90512</span></h1>
+        <p>Мы делаем как комплексные ремонты, так и ремонты отдельных помещений. А можем просто приехать и поклеить обои или уложить ламинат. Ниже наш примерный прайс на комплексные работы, а расценки на типы работ можно посмотреть в примерах смет. А вообще все очень индивидуально. Звоните - сориентируем более точно!</p>
+        <div class="tags align-items-center mb-3">
+          <p class="mb-0 mr-3">Тип ремонта:</p>
+          <span>Капитальный</span>
+          <span>Ремонт новостройки</span>
+          <span class="active">Ремонт под ключ</span>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-12 col-md d-flex d-md-block align-items-center">
+            <p class="mb-0 mr-2 mr-md-0">Стоимость ремонта:</p><h3>341 700 руб</h3>
+          </div>
+          <div class="col-12 col-md d-flex d-md-block align-items-center">
+            <p class="mb-0 mr-2 mr-md-0">Общая площадь:</p><h3>84 м.кв</h3>
+          </div>
+          <div class="col-12 col-md d-flex d-md-block align-items-center">
+            <p class="mb-0 mr-2 mr-md-0">Время работы:</p><h3>68 дней</h3>
+          </div>
+          <div class="col-md-5 col-12">
+            <a class="typical-repair-prices__item__link d-flex" href="#">Расчитать Ваш проект</a>
+          </div>
+        </div>
+      </section>
+      <!-- ./info-page-title-descr -->
+
+      <section class="slick-slider">
+        <div class="slider-for">
+          <div class="item">
+            <img src="images/main_ready_project_4.jpg" alt="image1"  draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/main_ready_project_4.jpg" alt="image2" draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/main_ready_project_4.jpg" alt="image3" draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/main_ready_project_4.jpg" alt="image4" draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/main_ready_project_4.jpg" alt="image5" draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/main_ready_project_4.jpg" alt="image1"  draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/main_ready_project_4.jpg" alt="image2" draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/main_ready_project_4.jpg" alt="image3" draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/main_ready_project_4.jpg" alt="image4" draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/main_ready_project_4.jpg" alt="image4" draggable="false"/>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <div class="item">
+            <img src="images/gallery_1.jpg" alt="image1"  draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/gallery_2.jpg" alt="image2" draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/gallery_3.jpg" alt="image3" draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/gallery_4.jpg" alt="image4" draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/gallery_4.jpg" alt="image5" draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/gallery_1.jpg" alt="image1"  draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/gallery_2.jpg" alt="image2" draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/gallery_3.jpg" alt="image3" draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/gallery_4.jpg" alt="image4" draggable="false"/>
+          </div>
+          <div class="item">
+            <img src="images/gallery_4.jpg" alt="image4" draggable="false"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 costing-examples__item__link align-items-center"><span><a href="#">Понравилось? Закажите подобный проект</a></span></div>
+        </div>
+      </section>
+      <!-- ./slick-slider -->
+
+      <section class="table-cost">
+        <h3>Смета выполненных работ:</h3>
+        <div class="table-responsive">
+          <table class="table table-col-2">
+            <thead class="thead-light">
+            <tr>
+              <th scope="col" colspan="2">Ремонт стен</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Поклейка флизелиновых обоев 1.06х10</td>
+              <td>4 м.кв.</td>
+            </tr>
+            <tr>
+              <td>Грунтовка бетоноконтакт</td>
+              <td>21 шт.</td>
+            </tr>
+            <tr>
+              <td>Штукатурка стен гипсовая</td>
+              <td>50 м.кв.</td>
+            </tr>
+            <tr>
+              <td>Грунтовка глубокого проникновения 1 слой</td>
+              <td>4 м.кв</td>
+            </tr>
+            <tr>
+              <td>Шпаклёвка полимерная финишная</td>
+              <td>120 м.кв.</td>
+            </tr>
+            <tr>
+              <td>Укладка керамической плитки (20 см. до 60 см)</td>
+              <td>9 м.кв</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-col-2">
+            <thead class="thead-light">
+            <tr>
+              <th scope="col" colspan="2">Ремонт пола</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Укладка керамической плитки</td>
+              <td>4 м.кв.</td>
+            </tr>
+            <tr>
+              <td>Укладка ламината</td>
+              <td>21 шт.</td>
+            </tr>
+            <tr>
+              <td>Стяжка пола</td>
+              <td>50 м.кв.</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-col-2">
+            <thead class="thead-light">
+            <tr>
+              <th scope="col" colspan="2">Сантехника</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Прокладка труб в стене водоснабжения водоотведения для ванны</td>
+              <td>4 м.кв</td>
+            </tr>
+            <tr>
+              <td>Монтаж полотенцесушителя</td>
+              <td>120 м.кв.</td>
+            </tr>
+            <tr>
+              <td>Установка сантехники</td>
+              <td>9 м.кв</td>
+            </tr>
+            </tbody>
+            <tfoot class="thead-light">
+            <tr>
+              <th scope="col" colspan="2" class="text-right">Итоговая стоимость ремонта: <span>323 200 руб.</span></th>
+            </tr>
+            </tfoot>
+          </table>
+        </div>
+        <h3 class="mt-5">Смета материалов:</h3>
+        <div class="table-responsive">
+          <table class="table table-col-2">
+            <thead class="thead-light">
+            <tr>
+              <th scope="col" colspan="2">Кухня</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Обои “Marco boss1.06х10”</td>
+              <td>10 рулон</td>
+            </tr>
+            <tr>
+              <td>Штукатурка “Rtband 10см”</td>
+              <td>10 шт.</td>
+            </tr>
+            <tr>
+              <td>Грунтовка глубокого проникновения “Капля”</td>
+              <td>10 шт.</td>
+            </tr>
+            <tr>
+              <td>Шпаклёвка полимерная финишная “Brozzex finish 2”  </td>
+              <td>10 м.п.</td>
+            </tr>
+            <tr>
+              <td>Плитак керамамарази (20 см. до 60 см)</td>
+              <td>10 м.кв</td>
+            </tr>
+            </tbody>
+            <tfoot class="thead-light">
+            <tr>
+              <th scope="col" colspan="2" class="text-right">Итоговая стоимость материалов: <span>63 200 руб.</span></th>
+            </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+      <!-- ./table-cost -->
+
+      <hr class="divider">
+
+      <div class="calculate-cost">
+        <h3 class="title-h3">Спасибо за внимание:)</h3>
+        <div class="calculate-cost__subhead">Если вам понравилось, рассчитайте стоимость вашего ремонта прямо сейчас!</div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="calculate-cost__item calculate-cost__item--online d-flex align-items-center justify-content-around">
+              <div class="calculate-cost__text">Он-лайн калькулятор</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="calculate-cost__item calculate-cost__item--project d-flex align-items-center justify-content-around">
+              <div class="calculate-cost__text">Расчет по проекту</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="calculate-cost__item calculate-cost__item--call d-flex align-items-center justify-content-around">
+              <div class="calculate-cost__text">Вызвать замерщика</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="calculate-cost__item calculate-cost__item--consultation d-flex align-items-center justify-content-around">
+              <div class="calculate-cost__text">Консультация специалиста</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./calculate-cost -->
+
+      <div class="bottom-call-back">
+        <div class="title-h4 mr-3">Мы ответим на все ваши вопросы. <span>Звоните - 8 (343) 204-23-44</span></div>
+        <button class="btn btn-primary">Заказать звонок</button>
+      </div>
+      <!-- ./call-back -->
+
+      <hr class="divider">
+
+      <section class="costing-examples costing-examples--lmb">
+        <div class="costing-examples__descr">
+          <h3 class="title-h3">Смотрите также другие проекты</h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="costing-examples__item">
+              <div class="costing-examples__img">
+                <img src="images/main_ready_project_mb.jpg" alt="ready project" class="w-100">
+              </div>
+              <div class="costing-examples__content">
+                <h6 class="font-weight-bold">Ремонт кухни под ключ 10 м.кв</h6>
+                <div class="project-card__rating">
+                  <div class="stars d-flex">
+                    <div class="stars__item stars__item--blue"></div>
+                    <div class="stars__item stars__item--blue"></div>
+                    <div class="stars__item stars__item--blue"></div>
+                    <div class="stars__item stars__item--blue"></div>
+                    <div class="stars__item stars__item--blue"></div>
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap align-items-center mt-3">
+                  <div class="w-50 costing-examples__item__link"><a href="#">Смета проекта</a></div>
+                  <div class="w-50 pl-2 costing-examples__item__price">257 920 руб.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="costing-examples__item">
+              <div class="costing-examples__img">
+                <img src="images/main_ready_project_mb.jpg" alt="ready project" class="w-100">
+              </div>
+              <div class="costing-examples__content">
+                <h6 class="font-weight-bold">Ремонт кухни под ключ 10 м.кв</h6>
+                <div class="project-card__rating">
+                  <div class="stars d-flex">
+                    <div class="stars__item stars__item--blue"></div>
+                    <div class="stars__item stars__item--blue"></div>
+                    <div class="stars__item stars__item--blue"></div>
+                    <div class="stars__item stars__item--blue"></div>
+                    <div class="stars__item stars__item--blue"></div>
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap align-items-center mt-3">
+                  <div class="w-50 costing-examples__item__link"><a href="#">Смета проекта</a></div>
+                  <div class="w-50 pl-2 costing-examples__item__price">257 920 руб.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="costing-examples__item">
+              <div class="costing-examples__img">
+                <img src="images/main_ready_project_mb.jpg" alt="ready project" class="w-100">
+              </div>
+              <div class="costing-examples__content">
+                <h6 class="font-weight-bold">Ремонт кухни под ключ 10 м.кв</h6>
+                <div class="project-card__rating">
+                  <div class="stars d-flex">
+                    <div class="stars__item stars__item--blue"></div>
+                    <div class="stars__item stars__item--blue"></div>
+                    <div class="stars__item stars__item--blue"></div>
+                    <div class="stars__item stars__item--blue"></div>
+                    <div class="stars__item stars__item--blue"></div>
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap align-items-center mt-3">
+                  <div class="w-50 costing-examples__item__link"><a href="#">Смета проекта</a></div>
+                  <div class="w-50 pl-2 costing-examples__item__price">257 920 руб.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ./costing-examples -->
+    </main>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <nav>
+      <ul class="footer-nav d-flex align-items-center">
+        <li class="footer-nav__item"><a class="footer-nav__link stock" href="#">Акции</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Расчеты стоимости</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Примеры работ</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Цены</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Отзывы</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#">О компании</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <!-- ./footer-nav-->
+
+    <div class="footer-contact row">
+      <div class="footer-contact__col hide-991">
+        <img src="./images/logo-footer.png" alt="logo footer" class="footer-logo">
+        <div>© ВираТек - ремонт квартир,домов,<br>
+          коммерческоей недвижимости, 2019 год.</div>
+      </div>
+
+      <div class="footer-contact__col">
+        <div class="mb-3">
+          <div class="footer-contact__title">Ежедневно с 09:00 до 20:00</div>
+          <div class="footer-contact__info footer-contact__info--lg">+7 (343) 200-00-92</div>
+        </div>
+        <div>
+          <div class="footer-contact__title">Эл.почта:</div>
+          <div class="footer-contact__info">Info@viratek.ru</div>
+        </div>
+      </div>
+
+      <div class="footer-contact__col">
+        <div class="mb-3">
+          <div class="footer-contact__title">WhatsApp</div>
+          <div class="footer-contact__info footer-contact__info--lg">+7 (343) 200-00-92</div>
+        </div>
+        <div class="footer-contact__title">г. Екатеринбург,</div>
+        <div class="footer-contact__info">ул. Малышева 60, оф 209</div>
+      </div>
+
+      <div class="footer-contact__col">
+        <div class="footer-review d-flex align-items-center">
+          <div class="stars d-flex mr-2">
+            <div class="stars__item stars__item--light"></div>
+            <div class="stars__item stars__item--light"></div>
+            <div class="stars__item stars__item--light"></div>
+            <div class="stars__item stars__item--light"></div>
+            <div class="stars__item stars__item--light"></div>
+          </div>
+          <span>Оставить отзыв</span>
+        </div>
+        <div class="d-flex align-items-center">
+          <span class="mr-2">Мы в соц.сетях: </span>
+          <span class="social-icon social-icon__inst"></span>
+          <span class="social-icon social-icon__youtube"></span>
+          <span class="social-icon social-icon__vk"></span>
+        </div>
+      </div>
+    </div>
+    <!-- ./footer-contacts-->
+
+    <div class="footer-info">
+      <span>Использование материалов сайта без согласования запрещено</span> <a href="#" class="ml-2">Политика конфидиенциальности</a>
+      <div>Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях информационные материалы и цены, размещенные на сайте, не являются публичной офертой</div>
+    </div>
+  </div>
+</footer>
+<!-- ./footer-->
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+<script>
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: '.slider-nav',
+    autoplay: false
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 10,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true
+  });
+</script>
+</body>
+</html>
