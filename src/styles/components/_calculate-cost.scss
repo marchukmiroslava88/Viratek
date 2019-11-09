@@ -151,6 +151,8 @@
       }
 
       &:hover {
+        background-color: $primary-color;
+
         .calculate-cost__text,
         p {
           color: $text-light;

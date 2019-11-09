@@ -157,6 +157,7 @@
 .online-calc-step-3,
 .online-calc-step-4,
 .online-calc-step-5,
+.online-calc-step-6,
 .page-success,
 .page-attach {
   .progress:before {
@@ -212,12 +213,14 @@
 }
 
 .online-calc-step-5,
+.online-calc-step-6,
 .page-success {
   .progress:before {
     width: 100%;
   }
 }
 
+.online-calc-step-6,
 .page-success,
 .page-attach {
   margin-bottom: 55px;
@@ -391,5 +394,75 @@
 
   .form-check-label {
     font-size: 13px;
+  }
+}
+
+.online-calc-step-6 {
+  &__content {
+    max-width: 685px;
+    margin-bottom: 60px;
+  }
+
+  .row {
+    margin-top: 45px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    margin-bottom: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &__price {
+    font-size: 60px;
+    color: $primary-color;
+    line-height: 1;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  &__text {
+    margin-top: 35px;
+    margin-bottom: 50px;
+
+    p {
+      color: $text-dark;
+    }
+
+    h2 {
+      margin: 0;
+      font-weight: bold;
+      font-size: $fz-lg;
+    }
+  }
+
+  &__link {
+    display: flex;
+  }
+
+  &__icon--1 {
+    width: 29px;
+    height: 28px;
+    background: url("../../images/icons/sprite.png") -613px -10px;
+    margin-left: 10px;
+    display: block;
+  }
+
+  &__icon--2 {
+    width: 31px;
+    height: 27px;
+    background: url("../../images/icons/sprite.png") -173px -507px;
+    margin-left: 5px;
+    display: block;
+  }
+
+  .calculate-cost__item {
+    padding: 40px;
   }
 }
