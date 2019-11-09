@@ -94,6 +94,7 @@ hr.divider {
 
     &:hover {
       background-color: rgba(0, 153, 232, 1);
+      color: #fff;
     }
   }
   span.active {
@@ -132,4 +133,8 @@ hr.divider {
     background-color: $primary-color;
     color: #fff;
   }
+}
+.price-list {
+  margin-top: 60px;
+  margin-bottom: 35px;
 }
