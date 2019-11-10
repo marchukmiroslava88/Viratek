@@ -1,4 +1,14 @@
 .slick-slider {
+  &.slider-popup {
+    .slider-for {
+      margin-top: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
   .costing-examples__item__link {
     padding: 10px;
     margin: 0 auto;
@@ -21,6 +31,10 @@
       background: url("../../images/icons/sprite.png") -123px -507px;
       margin-right: 5px;
     }
+  }
+
+  button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+    outline: none;
   }
 }
 
@@ -65,9 +79,6 @@
   top: 50%;
   z-index: 50;
   margin-top: -12px;
-}
-
-.slick-arrow {
   color: transparent;
   width: 50px;
   height: 50px;
